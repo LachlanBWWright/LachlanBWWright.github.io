@@ -1,4 +1,4 @@
-<div class="p-2 text-center">
+<div id="header" class="flex flex-col p-2 text-center">
     <p class="text-2xl sm:text-4xl md:text-6xl font-bold">Lachlan Wright</p>
     <p class="text-lg sm:text-2xl lg:text-4xl">Aspiring Full-Stack Developer</p>
     <br/>

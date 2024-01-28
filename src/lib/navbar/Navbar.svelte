@@ -24,7 +24,7 @@
     <a class="hover:text-blue-500 hidden sm:block" href="#test">Academic Record</a>
     {#if dropdownExpanded}
         <div class="flex flex-col absolute left-0 top-[37px] w-screen bg-[#333333] sm:hidden z-10">
-                <a class="hover:text-blue-500 sm:block" href="#test">Competencies</a>
+            <a class="hover:text-blue-500 sm:block" href="#test">Competencies</a>
             <a class="hover:text-blue-500 sm:block" href="#test">Experience</a>
             <a class="hover:text-blue-500 sm:block" href="#test">Portfolio</a>
             <a class="hover:text-blue-500 sm:block" href="#test">Resume</a>

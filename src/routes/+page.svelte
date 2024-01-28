@@ -1,19 +1,26 @@
 <script>
     import Navbar from "$lib/navbar/Navbar.svelte";
     import Header from "$lib/header/Header.svelte";
-    const randomArray = [
-        2,3,4,5,
-    ];
+    import Competencies from "$lib/competencies/Competencies.svelte";
+    import Experience from "$lib/experience/Experience.svelte";
+    import Portfolio from "$lib/portfolio/Portfolio.svelte";
+    import Resume from "$lib/resume/Resume.svelte";
+    import AcademicRecord from "$lib/academicRecord/AcademicRecord.svelte";
 </script>
 
-<div class="w-full bg-black min-h-screen text-white">
-    <Navbar test={4}/>
+<div class="w-screen bg-black min-h-screen text-white">
+    <Navbar/>
     <Header/>
-
-    
-    {#each randomArray as item}
-        <p class="text-white">{item}</p>
-    {/each}
+    <br/>
+    <Competencies/>
+    <br/>
+    <Experience/>
+    <br/>
+    <Portfolio/>
+    <br/>
+    <Resume/>
+    <br/>
+    <AcademicRecord/>
 </div>
 
 
