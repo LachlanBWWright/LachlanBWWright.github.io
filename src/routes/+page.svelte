@@ -1,22 +1,22 @@
 <script>
-    import Navbar from "$lib/navbar/Navbar.svelte";
-    import Header from "$lib/header/Header.svelte";
-    import Competencies from "$lib/competencies/Competencies.svelte";
-    import Experience from "$lib/experience/Experience.svelte";
-    import Portfolio from "$lib/portfolio/Portfolio.svelte";
-    import Resume from "$lib/resume/Resume.svelte";
-    import AcademicRecord from "$lib/academicRecord/AcademicRecord.svelte";
+    import Navbar from "$lib/sections/navbar/Navbar.svelte";
+    import Header from "$lib/sections/header/Header.svelte";
+    import Competencies from "$lib/sections/competencies/Competencies.svelte";
+    import Experience from "$lib/sections/experience/Experience.svelte";
+    import Portfolio from "$lib/sections/portfolio/Portfolio.svelte";
+    import Resume from "$lib/sections/resume/Resume.svelte";
+    import AcademicRecord from "$lib/sections/academicRecord/AcademicRecord.svelte";
 </script>
 
-<div class="w-screen bg-black min-h-screen text-white">
+<div class="bg-black min-h-screen text-white">
     <Navbar/>
     <Header/>
     <br/>
     <Competencies/>
     <br/>
-    <Experience/>
+     <Experience/>
     <br/>
-    <Portfolio/>
+   <Portfolio/>
     <br/>
     <Resume/>
     <br/>
