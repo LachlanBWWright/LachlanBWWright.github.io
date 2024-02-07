@@ -10,17 +10,19 @@
 
 <div class="bg-black min-h-screen text-white">
     <Navbar/>
-    <Header/>
-    <br/>
-    <Competencies/>
-    <br/>
-     <Experience/>
-    <br/>
-   <Portfolio/>
-    <br/>
-    <Resume/>
-    <br/>
-    <AcademicRecord/>
+    <div class="md:px-16 lg:px-32 xl:px-60 2xl:px-80">
+        <Header/>
+        <br/>
+        <Competencies/>
+        <br/>
+         <Experience/>
+        <br/>
+       <Portfolio/>
+        <br/>
+        <Resume/>
+        <br/>
+        <AcademicRecord/>
+    </div>
 </div>
 
 

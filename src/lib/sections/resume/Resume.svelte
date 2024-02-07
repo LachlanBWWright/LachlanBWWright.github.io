@@ -1,5 +1,5 @@
-<div class="flex flex-col gap-1 bg-gray-800">
-    <p class="text-3xl mx-auto">Experience</p>
+<div class="flex flex-col gap-1">
+    <p class="text-3xl mx-auto">Resume</p>
     <div class="grid grid-cols-1 grid-rows-2 gap-1 mx-4 md:mx-10 lg:mx-40">
         <div>            
             <p class="text-2xl text-center">Resume</p>
