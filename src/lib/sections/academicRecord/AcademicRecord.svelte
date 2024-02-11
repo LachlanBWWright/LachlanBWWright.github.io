@@ -1,11 +1,11 @@
-<div class="flex flex-col gap-1 ">
-    <p class="text-3xl mx-auto">Academic Record</p>
-    <div class="grid grid-cols-1 grid-rows-2 gap-1 mx-4 md:mx-10 lg:mx-40">
-        <div>            
-            <p class="text-2xl text-center">Resume</p>
-            <ul class="list-disc pl-5">
-                <li>Placeholder</li>
-            </ul>
-        </div>
+<div class="flex flex-col gap-1">
+  <p class="text-3xl text-center">Academic Record</p>
+  <div class="grid grid-cols-1 grid-rows-2 gap-1">
+    <div>
+      <p class="text-2xl text-center">Resume</p>
+      <ul class="list-disc pl-5">
+        <li>Placeholder</li>
+      </ul>
     </div>
+  </div>
 </div>
