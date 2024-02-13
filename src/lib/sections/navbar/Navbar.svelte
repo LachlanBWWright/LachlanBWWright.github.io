@@ -11,7 +11,7 @@
 </script>
 
 <nav
-  class="sticky top-0 flex flex-row items-center gap-4 p-1 w-full bg-[#222222] text-white text-md lg:text-xl xl:text-2xl justify-center"
+  class="sticky top-0 flex flex-row items-center gap-4 p-1 w-full bg-[#222222] shadow-2xl text-white text-md lg:text-xl xl:text-2xl justify-center"
 >
   {#if dropdownExpanded}
     <button

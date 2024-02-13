@@ -1,5 +1,5 @@
 <script>
-  import WhiteLinkButton from "$lib/buttons/whiteLinkButton/WhiteLinkButton.svelte";
+  import WhiteLinkButton from "$lib/buttons/WhiteLinkButton.svelte";
   import GitHubLogo from "$lib/icons/GitHubLogo.svelte";
   import PortfolioBody from "$lib/items/PortfolioBody.svelte";
   import PortfolioCard from "$lib/items/PortfolioCard.svelte";
