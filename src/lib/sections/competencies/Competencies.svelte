@@ -5,7 +5,7 @@
   import ListSectionHeader from "$lib/lists/ListSectionHeader.svelte";
 </script>
 
-<div class="flex flex-col gap-1">
+<div id="competencies" class="flex flex-col gap-1">
   <Heading>Competencies</Heading>
   <Subheading>Languages</Subheading>
   <ListSectionHeader>Programming Languages</ListSectionHeader>
@@ -91,5 +91,4 @@
     <li>TensorFlow</li>
     <li>MATLAB</li>
   </BaseList>
-  <br />
 </div>

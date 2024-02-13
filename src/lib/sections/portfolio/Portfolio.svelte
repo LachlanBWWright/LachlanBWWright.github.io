@@ -4,7 +4,7 @@
   import PortfolioItemHeader from "$lib/items/PortfolioItemHeader.svelte";
 </script>
 
-<div class="flex flex-col gap-2">
+<div id="portfolio" class="flex flex-col gap-2">
   <p class="text-3xl text-center">Portfolio</p>
   <div class="grid grid-cols-1 gap-1">
     <PortfolioCard>

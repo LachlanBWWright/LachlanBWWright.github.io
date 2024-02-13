@@ -3,7 +3,7 @@
   import Heading from "$lib/headers/Heading.svelte";
 </script>
 
-<div class="flex flex-col gap-2">
+<div id="resume" class="flex flex-col gap-2">
   <Heading>Resume</Heading>
   <div class="rounded-xl bg-gray-800 p-4">
     <div class="grid p-1 grid-cols-1 sm:grid-cols-2 gap-1">

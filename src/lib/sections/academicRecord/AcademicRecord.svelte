@@ -1,12 +1,11 @@
 <script>
   import Heading from "$lib/headers/Heading.svelte";
-  import Subheading from "$lib/headers/Subheading.svelte";
   import ListSectionHeader from "$lib/lists/ListSectionHeader.svelte";
   import BaseList from "$lib/lists/BaseList.svelte";
   import GreenDownloadButton from "$lib/buttons/GreenDownloadButton.svelte";
 </script>
 
-<div class="flex flex-col gap-1">
+<div id="academic-record" class="flex flex-col gap-1">
   <Heading>Academic Record</Heading>
   <ListSectionHeader
     >Bachelor of Engineering (Honours) (Software Major)</ListSectionHeader
