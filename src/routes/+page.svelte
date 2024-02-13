@@ -9,7 +9,7 @@
 </script>
 
 <div
-  class="bg-black min-h-screen text-white items-center flex flex-col font-mono"
+  class="bg-black min-h-screen text-white items-center flex flex-col font-mono pb-16"
 >
   <Navbar />
   <div class="max-w-[1300px] w-full px-4">
