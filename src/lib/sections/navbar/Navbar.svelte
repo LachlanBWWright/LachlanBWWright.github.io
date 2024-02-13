@@ -83,7 +83,7 @@
     class="{currentPosition === 'header'
       ? mobileSelectedButton
       : mobileUnselectedButton}"
-    on:click="{(e) => handleNavbarClick(e, 'header')}">Lachlan Wright</button
+    on:click="{(e) => handleNavbarClick(e, 'header')}">Profile</button
   >
   <button
     class="{currentPosition === 'competencies'
