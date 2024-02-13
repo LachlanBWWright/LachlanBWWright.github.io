@@ -11,6 +11,12 @@
     >Bachelor of Engineering (Honours) (Software Major)</ListSectionHeader
   >
   <p class="text-md italic">University of Technology Sydney</p>
+  <a
+    class="text-blue-600 visited:text-violet-800"
+    href="/AcademicRecord.pdf"
+    download="Lachlan Wright - Academic Transcript"
+    >Download Academic Transcript</a
+  >
 
   <p>Average Results</p>
   <BaseList>
@@ -26,12 +32,4 @@
     <li>Placeholder</li>
     <li>Placeholder</li>
   </BaseList>
-  <div class="fit w-fit">
-    <GreenDownloadButton
-      text="Download Transcript"
-      link="/AcademicRecord.pdf"
-      downloadName="Lachlan Wright - Academic Transcript"
-      >💾</GreenDownloadButton
-    >
-  </div>
 </div>
