@@ -24,22 +24,21 @@
       on:click="{openDropdown}">=</button
     >
   {/if}
-  <a class="hover:text-blue-500" href="#test">Lachlan Wright</a>
-  <a class="hover:text-blue-500 hidden sm:block" href="#test">Competencies</a>
-  <a class="hover:text-blue-500 hidden sm:block" href="#test">Experience</a>
-  <a class="hover:text-blue-500 hidden sm:block" href="#test">Portfolio</a>
-  <a class="hover:text-blue-500 hidden sm:block" href="#test">Resume</a>
-  <a class="hover:text-blue-500 hidden sm:block" href="#test">Academic Record</a
-  >
+  <a class="hover:text-blue-500" href="/">Lachlan Wright</a>
+  <a class="hover:text-blue-500 hidden sm:block" href="/">Competencies</a>
+  <a class="hover:text-blue-500 hidden sm:block" href="/">Experience</a>
+  <a class="hover:text-blue-500 hidden sm:block" href="/">Portfolio</a>
+  <a class="hover:text-blue-500 hidden sm:block" href="/">Resume</a>
+  <a class="hover:text-blue-500 hidden sm:block" href="/">Academic Record</a>
   {#if dropdownExpanded}
     <div
       class="flex flex-col absolute left-0 top-[37px] w-screen bg-[#333333] sm:hidden z-10 px-2"
     >
-      <a class="hover:text-blue-500 sm:block" href="#test">Competencies</a>
-      <a class="hover:text-blue-500 sm:block" href="#test">Experience</a>
-      <a class="hover:text-blue-500 sm:block" href="#test">Portfolio</a>
-      <a class="hover:text-blue-500 sm:block" href="#test">Resume</a>
-      <a class="hover:text-blue-500 sm:block" href="#test">Academic Record</a>
+      <a class="hover:text-blue-500 sm:block" href="/">Competencies</a>
+      <a class="hover:text-blue-500 sm:block" href="/">Experience</a>
+      <a class="hover:text-blue-500 sm:block" href="/">Portfolio</a>
+      <a class="hover:text-blue-500 sm:block" href="/">Resume</a>
+      <a class="hover:text-blue-500 sm:block" href="/">Academic Record</a>
     </div>
   {/if}
 </nav>

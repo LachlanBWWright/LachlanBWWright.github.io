@@ -1,6 +1,4 @@
 <script>
-  import WhiteLinkButton from "$lib/buttons/WhiteLinkButton.svelte";
-  import GitHubLogo from "$lib/icons/GitHubLogo.svelte";
   import PortfolioBody from "$lib/items/PortfolioBody.svelte";
   import PortfolioCard from "$lib/items/PortfolioCard.svelte";
   import PortfolioItemHeader from "$lib/items/PortfolioItemHeader.svelte";
@@ -12,11 +10,7 @@
     <PortfolioCard>
       <PortfolioItemHeader>
         <p>Cryogenic Wiring Simulation</p>
-        <div class="flex flex-col p-2">
-          <WhiteLinkButton link="TEST" text="GitHub Repository"
-            ><GitHubLogo size="{30}" /></WhiteLinkButton
-          >
-        </div>
+        <div class="flex flex-col p-2"></div>
       </PortfolioItemHeader>
       <PortfolioBody>
         <div>
