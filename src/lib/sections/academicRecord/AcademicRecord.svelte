@@ -12,7 +12,7 @@
   >
   <p class="text-md italic">University of Technology Sydney</p>
   <a
-    class="text-blue-600 visited:text-violet-800"
+    class="underline text-blue-600 visited:text-violet-800 hover:text-violet-800"
     href="/AcademicRecord.pdf"
     download="Lachlan Wright - Academic Transcript"
     >Download Academic Transcript</a
@@ -25,11 +25,15 @@
   </BaseList>
   <p>Subject Highlights</p>
   <BaseList>
-    <li>Placeholder</li>
-    <li>Placeholder</li>
-    <li>Placeholder</li>
-    <li>Placeholder</li>
-    <li>Placeholder</li>
-    <li>Placeholder</li>
+    <li>Applications Programming: 92%</li>
+    <li>Data Structures and Algorithms: 98%</li>
+    <li>Software Engineering Studio 1A: 96%</li>
+    <li>Software Engineering Studio 1B: 91%</li>
+    <li>Introduction to Data Analytics: 89%</li>
+    <li>Secure Programming and Penetration Testing: 91%</li>
+    <li>Software Development Studio: 98%</li>
+    <li>Software Architecture: 95%</li>
+    <li>Software Design Studio: 84%</li>
+    <li>Software Innovation Studio: 87%</li>
   </BaseList>
 </div>

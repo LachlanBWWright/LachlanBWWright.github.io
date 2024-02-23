@@ -29,7 +29,7 @@
     <p>Chaos1 - Sydney, NSW</p>
   </div>
   <BaseList>
-    <li>Developed a website utilising ReactJS a MERN stack, SocketIO,</li>
+    <li>Developed a website utilising ReactJS a MERN stack.</li>
     <li>
       Used Jotai, Immer, and Tanstack Query (React Query) libraries for state
       management.
