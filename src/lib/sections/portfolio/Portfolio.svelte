@@ -2,6 +2,9 @@
   import PortfolioBody from "$lib/items/PortfolioBody.svelte";
   import PortfolioCard from "$lib/items/PortfolioCard.svelte";
   import PortfolioItemHeader from "$lib/items/PortfolioItemHeader.svelte";
+
+  import Carousel from "$lib/carousel/Carousel.svelte";
+  import CarouselItem from "$lib/carousel/CarouselItem.svelte";
 </script>
 
 <div id="portfolio" class="flex flex-col gap-2">
@@ -30,6 +33,24 @@
             model’s outputs.
           </li>
         </div>
+        <Carousel>
+          <CarouselItem>
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/1Q-ZASEpHeI?si=2BspDC_boqL3fBAb"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </CarouselItem>
+          <CarouselItem>
+            <img
+              src="portfolio/cryo/Cryo1.png"
+              alt="Screenshot of web application."
+            />
+          </CarouselItem>
+        </Carousel>
       </PortfolioBody>
     </PortfolioCard>
     <PortfolioCard>
@@ -51,6 +72,11 @@
             collaborative environment.
           </li>
         </div>
+        <Carousel>
+          <CarouselItem>
+            <img src="portfolio/exam/Exam1.png" alt="Screenshot of website." />
+          </CarouselItem>
+        </Carousel>
       </PortfolioBody>
     </PortfolioCard>
     <PortfolioCard>
@@ -72,6 +98,11 @@
             be automatically scanned periodically.
           </li>
         </div>
+        <Carousel>
+          <CarouselItem>
+            <img src="portfolio/deals/Deals1.png" alt="Screenshot of code." />
+          </CarouselItem>
+        </Carousel>
       </PortfolioBody>
     </PortfolioCard>
     <PortfolioCard>
@@ -101,6 +132,36 @@
             Database using Mongoose.
           </li>
         </div>
+        <Carousel>
+          <CarouselItem>
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/odZuaUu2I3c?si=Pwt6HkQCBgARhmR5"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </CarouselItem>
+          <CarouselItem>
+            <img
+              src="portfolio/mafia/Mafia1.png"
+              alt="Screenshot of web application."
+            />
+          </CarouselItem>
+          <CarouselItem>
+            <img
+              src="portfolio/mafia/Mafia2.png"
+              alt="Screenshot of web application."
+            />
+          </CarouselItem>
+          <CarouselItem>
+            <img
+              src="portfolio/mafia/Mafia3.png"
+              alt="Screenshot of web application."
+            />
+          </CarouselItem>
+        </Carousel>
       </PortfolioBody>
     </PortfolioCard>
     <PortfolioCard>
@@ -115,6 +176,29 @@
           </li>
           <li>Developed interfaces with Transport for NSW’s OpenData API.</li>
         </div>
+        <Carousel>
+          <CarouselItem>
+            <img
+              class="max-h-96"
+              src="portfolio/timetable/Timetable1.png"
+              alt="Screenshot of application."
+            />
+          </CarouselItem>
+          <CarouselItem>
+            <img
+              class="max-h-96"
+              src="portfolio/timetable/Timetable2.png"
+              alt="Screenshot of application."
+            />
+          </CarouselItem>
+          <CarouselItem>
+            <img
+              class="max-h-96"
+              src="portfolio/timetable/Timetable3.png"
+              alt="Screenshot of application."
+            />
+          </CarouselItem>
+        </Carousel>
       </PortfolioBody>
     </PortfolioCard>
   </div>

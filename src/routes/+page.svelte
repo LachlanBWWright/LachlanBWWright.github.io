@@ -12,7 +12,7 @@
   class="bg-black min-h-screen text-white items-center flex flex-col font-mono pb-16"
 >
   <Navbar />
-  <div class="max-w-[1300px] w-full px-4">
+  <div class="max-w-[1300px] w-full px-2 sm:px-4">
     <Header />
     <br />
     <Competencies />

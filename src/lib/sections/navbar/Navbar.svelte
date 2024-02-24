@@ -65,8 +65,8 @@
 
 <nav
   class="{scrolledToTop && !dropdownExpanded
-    ? 'sticky top-0 flex flex-row items-center gap-4 p-1 w-full bg-[#000000] shadow-2xl text-white text-md lg:text-xl xl:text-2xl justify-center h-8 transition duration-500'
-    : 'sticky top-0 flex flex-row items-center gap-4 p-1 w-full bg-[#222222] shadow-2xl text-white text-md lg:text-xl xl:text-2xl justify-center h-8 transition duration-500'}"
+    ? 'sticky top-0 flex flex-row items-center gap-4 p-1 w-full bg-[#000000] shadow-2xl text-white text-md lg:text-xl xl:text-2xl justify-center h-8 transition duration-500 z-10'
+    : 'sticky top-0 flex flex-row items-center gap-4 p-1 w-full bg-[#222222] shadow-2xl text-white text-md lg:text-xl xl:text-2xl justify-center h-8 transition duration-500 z-10'}"
 >
   {#if dropdownExpanded}
     <button
