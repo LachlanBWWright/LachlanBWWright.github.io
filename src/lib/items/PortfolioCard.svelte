@@ -1,5 +1,4 @@
-<div class="sm:p-2">
-  <div class="bg-gray-800 rounded-3xl p-2 px-5 flex flex-col">
-    <slot />
-  </div>
+<div class="flex flex-col gap-2">
+  <slot />
+  <hr class="pt-2 pb-4" />
 </div>
