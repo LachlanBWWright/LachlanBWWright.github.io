@@ -28,12 +28,19 @@
   </div>
   <div class="py-5 px-2 sm:px-10 md:px-15 lg:px-20">
     <p class="text-justify">
-      I am currently undertaking a Bachelor of Software Engineering at UTS, due
-      to be completed in 2024. I am passionate about all aspects of software
-      development, and am looking to specialise in full-stack web development. I
-      am looking for employment opportunities to further my existing
-      competencies, and to improve my capabilities with new technologies and
-      frameworks.
+      I am an aspiring software developer, with a lifelong fascination with
+      technology. While passionate about all aspects of software development, I
+      have a particular interest in web development.
+    </p>
+    <br />
+    <p class="text-justify">
+      Currently, I am undertaking a Bachelor of Software Engineering at UTS with
+      distinction-average results, due to be completed in the first half of
+      2024. In addition to completing a 12-week internship focusing primarily on
+      full-stack web development, I have also undertaken a variety of personal
+      project. I am currently looking for employment opportunities to further my
+      existing competencies, and to improve my capabilities with new
+      technologies and frameworks.
     </p>
   </div>
 </div>
