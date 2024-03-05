@@ -38,7 +38,7 @@
       distinction-average results, due to be completed in the first half of
       2024. In addition to completing a 12-week internship focusing primarily on
       full-stack web development, I have also undertaken a variety of personal
-      project. I am currently looking for employment opportunities to further my
+      projects. I am currently looking for employment opportunities to further my
       existing competencies, and to improve my capabilities with new
       technologies and frameworks.
     </p>
