@@ -1,11 +1,6 @@
 <script>
-  import Navbar from "$lib/sections/navbar/Navbar.svelte";
   import Header from "$lib/sections/header/Header.svelte";
-  import Competencies from "$lib/sections/competencies/Competencies.svelte";
-  import Experience from "$lib/sections/experience/Experience.svelte";
-  import Portfolio from "$lib/sections/portfolio/Portfolio.svelte";
   import Resume from "$lib/sections/resume/Resume.svelte";
-  import AcademicRecord from "$lib/sections/academicRecord/AcademicRecord.svelte";
   import Heading from "$lib/headers/Heading.svelte";
 </script>
 
