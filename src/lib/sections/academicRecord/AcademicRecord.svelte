@@ -35,5 +35,6 @@
     <li>Software Architecture: 95%</li>
     <li>Software Design Studio: 84%</li>
     <li>Software Innovation Studio: 87%</li>
+    <li>Engineering Capstone: High Distinction (Not Graded)</li>
   </BaseList>
 </div>
