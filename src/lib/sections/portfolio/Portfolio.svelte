@@ -55,6 +55,49 @@
     </PortfolioCard>
     <PortfolioCard>
       <PortfolioItemHeader>
+        <p>Pangea Resource Edit</p>
+      </PortfolioItemHeader>
+      <PortfolioBody>
+        <div>
+          <li>
+            Developed a React-based level editor for the open-sourced 2001 video
+            game “Otto Matic”.
+          </li>
+          <li>
+            Forked and extended the Python “RSRCDump” library for editing MAC OS
+            Resource Fork files to support padding bytes, improve support for
+            struct arrays and non-CLI access to features.
+          </li>
+          <li>
+            Used Pyodide with the forked library to convert level files to JSON
+            and back after modification.
+          </li>
+          <li>
+            Used Konva to create a drag-and-drop interface for editing level
+            data
+          </li>
+        </div>
+        <Carousel>
+          <CarouselItem>
+            <img src="portfolio/pangea/Pangea1.png" alt="" />
+          </CarouselItem>
+          <CarouselItem>
+            <img src="portfolio/pangea/Pangea2.png" alt="" />
+          </CarouselItem>
+          <CarouselItem>
+            <img src="portfolio/pangea/Pangea3.png" alt="" />
+          </CarouselItem>
+          <CarouselItem>
+            <img src="portfolio/pangea/Pangea4.png" alt="" />
+          </CarouselItem>
+          <CarouselItem>
+            <img src="portfolio/pangea/Pangea5.png" alt="" />
+          </CarouselItem>
+        </Carousel>
+      </PortfolioBody>
+    </PortfolioCard>
+    <PortfolioCard>
+      <PortfolioItemHeader>
         <p>Online Exam System</p>
       </PortfolioItemHeader>
       <PortfolioBody>
