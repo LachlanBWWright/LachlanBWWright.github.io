@@ -5,6 +5,8 @@
 
   import Carousel from "$lib/carousel/Carousel.svelte";
   import CarouselItem from "$lib/carousel/CarouselItem.svelte";
+  import WhiteLinkButton from "$lib/buttons/WhiteLinkButton.svelte";
+  import GitHubLogo from "$lib/icons/GitHubLogo.svelte";
 </script>
 
 <div id="portfolio" class="flex flex-col gap-2">
@@ -59,6 +61,18 @@
       </PortfolioItemHeader>
       <PortfolioBody>
         <div>
+          <div class="grid grid-cols-2 gap-4">
+            <WhiteLinkButton
+              text="Frontend"
+              link="https://github.com/LachlanBWWright/PangeaRSEdit"
+              ><GitHubLogo size="{30}" /></WhiteLinkButton
+            >
+            <WhiteLinkButton
+              text="RSRCDump"
+              link="https://github.com/LachlanBWWright/rsrcdump"
+              ><GitHubLogo size="{30}" /></WhiteLinkButton
+            >
+          </div>
           <li>
             Developed a React-based level editor for the open-sourced 2001 video
             game “Otto Matic”.
@@ -102,6 +116,11 @@
       </PortfolioItemHeader>
       <PortfolioBody>
         <div>
+          <WhiteLinkButton
+            text="Repository"
+            link="https://github.com/LachlanBWWright/T1-Online-Exam-System"
+            ><GitHubLogo size="{30}" /></WhiteLinkButton
+          >
           <li>Created a mock website for the online invigilation of exams.</li>
           <li>
             Used NextJS, tRPC, Prisma, Tailwind CSS, NextAuthJS libraries.
@@ -128,6 +147,11 @@
       </PortfolioItemHeader>
       <PortfolioBody>
         <div>
+          <WhiteLinkButton
+            text="Repository"
+            link="https://github.com/LachlanBWWright/LBWW-Deal-Scanner"
+            ><GitHubLogo size="{30}" /></WhiteLinkButton
+          >
           <li>
             Developed a NodeJS-based application written in TypeScript,
             utilising Puppeteer, Axios, and Mongoose NPM packages.
@@ -154,6 +178,18 @@
       </PortfolioItemHeader>
       <PortfolioBody>
         <div>
+          <div class="grid grid-cols-2 gap-4">
+            <WhiteLinkButton
+              text="React DOM"
+              link="https://github.com/LachlanBWWright/MERN-Mafia"
+              ><GitHubLogo size="{30}" /></WhiteLinkButton
+            >
+            <WhiteLinkButton
+              text="React Native"
+              link="https://github.com/LachlanBWWright/MERN-Mafia-Mobile"
+              ><GitHubLogo size="{30}" /></WhiteLinkButton
+            >
+          </div>
           <li>
             Created an online chat-based game built with a MERN stack, alongside
             a React Native app as an alternate frontend.
@@ -213,6 +249,11 @@
       </PortfolioItemHeader>
       <PortfolioBody>
         <div>
+          <WhiteLinkButton
+            text="Repository"
+            link="https://github.com/LachlanBWWright/Flutter_Timetable"
+            ><GitHubLogo size="{30}" /></WhiteLinkButton
+          >
           <li>
             Developed a mobile application for viewing public transportation
             timetables in NSW.
