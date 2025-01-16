@@ -108,7 +108,7 @@
             <img src="portfolio/pangea/Pangea5.png" alt="" />
           </CarouselItem>
           <CarouselItem>
-            <img src="portfolio/pangea/Pange6.png" alt="" />
+            <img src="portfolio/pangea/Pangea6.png" alt="" />
           </CarouselItem>
         </Carousel>
       </PortfolioBody>
