@@ -2,7 +2,6 @@
   import Heading from "$lib/headers/Heading.svelte";
   import ListSectionHeader from "$lib/lists/ListSectionHeader.svelte";
   import BaseList from "$lib/lists/BaseList.svelte";
-  import GreenDownloadButton from "$lib/buttons/GreenDownloadButton.svelte";
 </script>
 
 <div id="academic-record" class="flex flex-col gap-1">
@@ -20,8 +19,8 @@
 
   <p>Average Results</p>
   <BaseList>
-    <li>Grade Point Average: 6.41/7.00</li>
-    <li>Weighted Average Mark (WAM): 85.62%</li>
+    <li>Grade Point Average: 6.47/7.00</li>
+    <li>Weighted Average Mark (WAM): 85.97%</li>
   </BaseList>
   <p>Subject Highlights</p>
   <BaseList>

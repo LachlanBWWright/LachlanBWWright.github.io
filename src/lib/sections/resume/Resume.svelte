@@ -6,13 +6,8 @@
 <div id="resume" class="flex flex-col gap-2 items-center">
   <Heading>Resume</Heading>
   <div class="rounded-xl bg-gray-800 p-4 max-w-xl">
-    <div class="grid p-1 grid-cols-1 sm:grid-cols-2 gap-1">
+    <div class="grid p-1 grid-cols-1 gap-1">
       <img src="/Resume-Page-1.jpg" alt="Resume Page 1" class="w-full h-auto" />
-      <img
-        src="/Resume-Page-2.jpg"
-        alt="Resume Page 2"
-        class="w-full h-auto hidden sm:block"
-      />
     </div>
     <GreenDownloadButton
       text="Download PDF"

@@ -8,9 +8,7 @@
   import AcademicRecord from "$lib/sections/academicRecord/AcademicRecord.svelte";
 </script>
 
-<div
-  class="bg-black min-h-screen text-white items-center flex flex-col font-mono pb-16"
->
+<div class="bg-black min-h-screen text-white items-center flex flex-col pb-16">
   <Navbar />
   <div class="max-w-[1300px] w-full px-2 sm:px-4">
     <Header />

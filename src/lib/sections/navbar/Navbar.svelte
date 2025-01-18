@@ -36,8 +36,26 @@
 
   onMount(() => {
     const scrollFn = function () {
+      const navbarRef = document.getElementById("navbar");
+      const navbarHeight = navbarRef?.clientHeight ?? 32;
+
+      console.log(navbarRef, navbarHeight);
+
       if (window.scrollY === 0) scrolledToTop = true;
       else scrolledToTop = false;
+
+      //Always highlight top item if scrolled to top
+      if (scrolledToTop) {
+        currentPosition = "header";
+        return;
+      }
+
+      //Highlight bottom item if scrolled to bottom
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        currentPosition = "academic-record";
+        return;
+      }
+
       for (const item of [
         "header",
         "competencies",
@@ -51,7 +69,9 @@
 
         if (
           window.scrollY >=
-          anchor.offsetTop - 32 - (window.innerHeight - 32) / 2
+          anchor.offsetTop -
+            navbarHeight -
+            (window.innerHeight - navbarHeight) / 2
         ) {
           currentPosition = item;
         } else break;
@@ -61,12 +81,15 @@
     document.addEventListener("scroll", scrollFn);
     return () => document.removeEventListener("scroll", scrollFn);
   });
+
+  onMount(() => {});
 </script>
 
 <nav
+  id="navbar"
   class="{scrolledToTop && !dropdownExpanded
-    ? 'sticky top-0 flex flex-row items-center gap-4 p-1 w-full bg-[#000000] shadow-2xl text-white text-md lg:text-xl xl:text-2xl justify-center h-8 transition duration-500 z-10'
-    : 'sticky top-0 flex flex-row items-center gap-4 p-1 w-full bg-[#222222] shadow-2xl text-white text-md lg:text-xl xl:text-2xl justify-center h-8 transition duration-500 z-10'}"
+    ? 'sticky top-0 flex flex-row items-center gap-6 p-1 w-full bg-[#000000] shadow-2xl text-white text-md lg:text-xl xl:text-2xl justify-center h-[40px] sm:h-[32px] transition duration-500 z-10'
+    : 'sticky top-0 flex flex-row items-center gap-6 p-1 w-full bg-[#222222] shadow-2xl text-white text-md lg:text-xl xl:text-2xl justify-center h-[40px] sm:h-[32px] transition duration-500 z-10'}"
 >
   {#if dropdownExpanded}
     <button
@@ -117,7 +140,7 @@
   >
   {#if dropdownExpanded}
     <div
-      class="{'flex flex-col absolute left-0 top-[32px] w-screen bg-[#333333] sm:hidden z-10 px-2 transition-all duration-500'}"
+      class="{'flex flex-col absolute left-0 top-[40px] sm:top-[32px] w-screen bg-[#333333] sm:hidden z-10 px-2 transition-all duration-500'}"
     >
       <button
         class="{currentPosition === 'competencies'
