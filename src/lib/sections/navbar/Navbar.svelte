@@ -5,13 +5,14 @@
 
   //Buttons that appear on desktop view, but are hidden on mobile view
   let unselectedButton =
-    "hover:text-blue-500 hidden sm:block transition duration-500";
-  let selectedButton = "text-blue-500 hidden sm:block transition duration-500";
+    "hover:text-blue-500 hidden sm:block transition-colors duration-500";
+  let selectedButton =
+    "text-blue-500 hidden sm:block transition-colors duration-500";
   //Buttons that appear on mobile view (May be hidden by virtue of a hidden parent on desktop)
   let mobileUnselectedButton =
-    "hover:text-blue-500 transition duration-500 text-left text-3xl";
+    "hover:text-blue-500 transition-colors duration-500 text-left text-3xl";
   let mobileSelectedButton =
-    "text-blue-500 transition duration-500 text-left text-3xl";
+    "text-blue-500 transition-colors duration-500 text-left text-3xl";
   let currentPosition = $state("header"); //The current position of the page, used to determine which button should be highlighted
 
   let dropdownExpanded = $state(false);
