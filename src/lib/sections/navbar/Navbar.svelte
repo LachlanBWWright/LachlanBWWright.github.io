@@ -1,13 +1,17 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
+  let baseButton = "transition duration-500";
+
   //Buttons that appear on desktop view, but are hidden on mobile view
   let unselectedButton =
     "hover:text-blue-500 hidden sm:block transition duration-500";
   let selectedButton = "text-blue-500 hidden sm:block transition duration-500";
   //Buttons that appear on mobile view (May be hidden by virtue of a hidden parent on desktop)
-  let mobileUnselectedButton = "hover:text-blue-500 transition duration-500";
-  let mobileSelectedButton = "text-blue-500 transition duration-500";
+  let mobileUnselectedButton =
+    "hover:text-blue-500 transition duration-500 text-left text-3xl";
+  let mobileSelectedButton =
+    "text-blue-500 transition duration-500 text-left text-3xl";
   let currentPosition = $state("header"); //The current position of the page, used to determine which button should be highlighted
 
   let dropdownExpanded = $state(false);
@@ -88,8 +92,8 @@
 <nav
   id="navbar"
   class={scrolledToTop && !dropdownExpanded
-    ? "sticky top-0 flex flex-row items-center gap-6 p-1 w-full bg-[#000000] shadow-2xl text-white text-lg sm:text-base lg:text-xl xl:text-2xl justify-center h-12 sm:h-10 transition duration-500 z-10"
-    : "sticky top-0 flex flex-row items-center gap-6 p-1 w-full bg-[#222222] shadow-2xl text-white text-lg sm:text-base lg:text-xl xl:text-2xl justify-center h-12 sm:h-10 transition duration-500 z-10"}
+    ? "sticky top-0 flex flex-row items-center gap-6 p-1 w-full bg-[#000000] shadow-2xl text-white text-lg sm:text-base lg:text-xl xl:text-2xl sm:justify-center h-12 sm:h-10 transition duration-500 z-10"
+    : "sticky top-0 flex flex-row items-center gap-6 p-1 w-full bg-[#222222] shadow-2xl text-white text-lg sm:text-base lg:text-xl xl:text-2xl sm:justify-center h-12 sm:h-10 transition duration-500 z-10"}
 >
   {#if dropdownExpanded}
     <button
@@ -131,48 +135,47 @@
     onclick={(e) => handleNavbarClick(e, "academic-record")}
     >Academic Record</button
   >
-  {#if dropdownExpanded}
-    <div
-      class={"flex flex-col absolute left-0 top-[40px] sm:top-[32px] w-screen bg-[#333333] sm:hidden z-10 px-2 transition-all duration-500 truncate"}
+  <div
+    class={dropdownExpanded
+      ? "flex gap-2 p-2 flex-col absolute left-0 top-[48px] sm:top-[40px] w-screen bg-[#333333] sm:hidden z-10 transition-all duration-500 truncate"
+      : "flex gap-2 p-2 opacity-0 flex-col absolute left-0 top-[48px] sm:top-[40px] w-screen bg-[#333333] sm:hidden z-10 transition-all duration-500 truncate"}
+  >
+    <button
+      class={currentPosition === "header"
+        ? mobileSelectedButton
+        : mobileUnselectedButton}
+      onclick={(e) => handleNavbarClick(e, "header")}>Profile</button
     >
-      <button
-        class={currentPosition === "header"
-          ? mobileSelectedButton
-          : mobileUnselectedButton}
-        onclick={(e) => handleNavbarClick(e, "header")}>Profile</button
-      >
-      <button
-        class={currentPosition === "competencies"
-          ? mobileSelectedButton
-          : mobileUnselectedButton}
-        onclick={(e) => handleNavbarClick(e, "competencies")}
-        >Competencies</button
-      >
-      <button
-        class={currentPosition === "experience"
-          ? mobileSelectedButton
-          : mobileUnselectedButton}
-        onclick={(e) => handleNavbarClick(e, "experience")}>Experience</button
-      >
-      <button
-        class={currentPosition === "portfolio"
-          ? mobileSelectedButton
-          : mobileUnselectedButton}
-        onclick={(e) => handleNavbarClick(e, "portfolio")}>Portfolio</button
-      >
-      <button
-        class={currentPosition === "resume"
-          ? mobileSelectedButton
-          : mobileUnselectedButton}
-        onclick={(e) => handleNavbarClick(e, "resume")}>Resume</button
-      >
-      <button
-        class={currentPosition === "academic-record"
-          ? mobileSelectedButton
-          : mobileUnselectedButton}
-        onclick={(e) => handleNavbarClick(e, "academic-record")}
-        >Academic Record</button
-      >
-    </div>
-  {/if}
+    <button
+      class={currentPosition === "competencies"
+        ? mobileSelectedButton
+        : mobileUnselectedButton}
+      onclick={(e) => handleNavbarClick(e, "competencies")}>Competencies</button
+    >
+    <button
+      class={currentPosition === "experience"
+        ? mobileSelectedButton
+        : mobileUnselectedButton}
+      onclick={(e) => handleNavbarClick(e, "experience")}>Experience</button
+    >
+    <button
+      class={currentPosition === "portfolio"
+        ? mobileSelectedButton
+        : mobileUnselectedButton}
+      onclick={(e) => handleNavbarClick(e, "portfolio")}>Portfolio</button
+    >
+    <button
+      class={currentPosition === "resume"
+        ? mobileSelectedButton
+        : mobileUnselectedButton}
+      onclick={(e) => handleNavbarClick(e, "resume")}>Resume</button
+    >
+    <button
+      class={currentPosition === "academic-record"
+        ? mobileSelectedButton
+        : mobileUnselectedButton}
+      onclick={(e) => handleNavbarClick(e, "academic-record")}
+      >Academic Record</button
+    >
+  </div>
 </nav>
