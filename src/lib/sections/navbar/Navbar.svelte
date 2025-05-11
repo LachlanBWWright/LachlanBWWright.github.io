@@ -87,9 +87,9 @@
 
 <nav
   id="navbar"
-  class="{scrolledToTop && !dropdownExpanded
-    ? 'sticky top-0 flex flex-row items-center gap-6 p-1 w-full bg-[#000000] shadow-2xl text-white text-md lg:text-xl xl:text-2xl justify-center h-[40px] sm:h-[32px] transition duration-500 z-10'
-    : 'sticky top-0 flex flex-row items-center gap-6 p-1 w-full bg-[#222222] shadow-2xl text-white text-md lg:text-xl xl:text-2xl justify-center h-[40px] sm:h-[32px] transition duration-500 z-10'}"
+  class={scrolledToTop && !dropdownExpanded
+    ? "sticky top-0 flex flex-row items-center gap-6 p-1 w-full bg-[#000000] shadow-2xl text-white text-lg sm:text-base lg:text-xl xl:text-2xl justify-center h-12 sm:h-10 transition duration-500 z-10"
+    : "sticky top-0 flex flex-row items-center gap-6 p-1 w-full bg-[#222222] shadow-2xl text-white text-lg sm:text-base lg:text-xl xl:text-2xl justify-center h-12 sm:h-10 transition duration-500 z-10"}
 >
   {#if dropdownExpanded}
     <button
@@ -103,76 +103,74 @@
     >
   {/if}
   <button
-    class="{currentPosition === 'header'
-      ? mobileSelectedButton
-      : mobileUnselectedButton}"
-    onclick={(e) => handleNavbarClick(e, 'header')}>Profile</button
+    class={currentPosition === "header" ? selectedButton : unselectedButton}
+    onclick={(e) => handleNavbarClick(e, "header")}>Profile</button
   >
   <button
-    class="{currentPosition === 'competencies'
+    class={currentPosition === "competencies"
       ? selectedButton
-      : unselectedButton}"
-    onclick={(e) => handleNavbarClick(e, 'competencies')}
-    >Competencies</button
+      : unselectedButton}
+    onclick={(e) => handleNavbarClick(e, "competencies")}>Competencies</button
   >
   <button
-    class="{currentPosition === 'experience'
+    class={currentPosition === "experience" ? selectedButton : unselectedButton}
+    onclick={(e) => handleNavbarClick(e, "experience")}>Experience</button
+  >
+  <button
+    class={currentPosition === "portfolio" ? selectedButton : unselectedButton}
+    onclick={(e) => handleNavbarClick(e, "portfolio")}>Portfolio</button
+  >
+  <button
+    class={currentPosition === "resume" ? selectedButton : unselectedButton}
+    onclick={(e) => handleNavbarClick(e, "resume")}>Resume</button
+  >
+  <button
+    class={currentPosition === "academic-record"
       ? selectedButton
-      : unselectedButton}"
-    onclick={(e) => handleNavbarClick(e, 'experience')}>Experience</button
-  >
-  <button
-    class="{currentPosition === 'portfolio'
-      ? selectedButton
-      : unselectedButton}"
-    onclick={(e) => handleNavbarClick(e, 'portfolio')}>Portfolio</button
-  >
-  <button
-    class="{currentPosition === 'resume' ? selectedButton : unselectedButton}"
-    onclick={(e) => handleNavbarClick(e, 'resume')}>Resume</button
-  >
-  <button
-    class="{currentPosition === 'academic-record'
-      ? selectedButton
-      : unselectedButton}"
-    onclick={(e) => handleNavbarClick(e, 'academic-record')}
+      : unselectedButton}
+    onclick={(e) => handleNavbarClick(e, "academic-record")}
     >Academic Record</button
   >
   {#if dropdownExpanded}
     <div
-      class="{'flex flex-col absolute left-0 top-[40px] sm:top-[32px] w-screen bg-[#333333] sm:hidden z-10 px-2 transition-all duration-500'}"
+      class={"flex flex-col absolute left-0 top-[40px] sm:top-[32px] w-screen bg-[#333333] sm:hidden z-10 px-2 transition-all duration-500 truncate"}
     >
       <button
-        class="{currentPosition === 'competencies'
+        class={currentPosition === "header"
           ? mobileSelectedButton
-          : mobileUnselectedButton}"
-        onclick={(e) => handleNavbarClick(e, 'competencies')}
+          : mobileUnselectedButton}
+        onclick={(e) => handleNavbarClick(e, "header")}>Profile</button
+      >
+      <button
+        class={currentPosition === "competencies"
+          ? mobileSelectedButton
+          : mobileUnselectedButton}
+        onclick={(e) => handleNavbarClick(e, "competencies")}
         >Competencies</button
       >
       <button
-        class="{currentPosition === 'experience'
+        class={currentPosition === "experience"
           ? mobileSelectedButton
-          : mobileUnselectedButton}"
-        onclick={(e) => handleNavbarClick(e, 'experience')}
-        >Experience</button
+          : mobileUnselectedButton}
+        onclick={(e) => handleNavbarClick(e, "experience")}>Experience</button
       >
       <button
-        class="{currentPosition === 'portfolio'
+        class={currentPosition === "portfolio"
           ? mobileSelectedButton
-          : mobileUnselectedButton}"
-        onclick={(e) => handleNavbarClick(e, 'portfolio')}>Portfolio</button
+          : mobileUnselectedButton}
+        onclick={(e) => handleNavbarClick(e, "portfolio")}>Portfolio</button
       >
       <button
-        class="{currentPosition === 'resume'
+        class={currentPosition === "resume"
           ? mobileSelectedButton
-          : mobileUnselectedButton}"
-        onclick={(e) => handleNavbarClick(e, 'resume')}>Resume</button
+          : mobileUnselectedButton}
+        onclick={(e) => handleNavbarClick(e, "resume")}>Resume</button
       >
       <button
-        class="{currentPosition === 'academic-record'
+        class={currentPosition === "academic-record"
           ? mobileSelectedButton
-          : mobileUnselectedButton}"
-        onclick={(e) => handleNavbarClick(e, 'academic-record')}
+          : mobileUnselectedButton}
+        onclick={(e) => handleNavbarClick(e, "academic-record")}
         >Academic Record</button
       >
     </div>

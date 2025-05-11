@@ -11,7 +11,7 @@
   <div>
     <ListSectionDateHeader>
       <p>Proactive Services Team Member (Casual Employment)</p>
-      <p>(Sep 2022 - Present)</p>
+      <p>(Sep 2022 - December 2024)</p>
     </ListSectionDateHeader>
     <p>Woolworths - Leura, NSW</p>
   </div>
@@ -23,8 +23,8 @@
 
   <div>
     <ListSectionDateHeader>
-      <p>Full Stack Developer (Internship)</p>
-      <p>(Nov 2023 - Feb 2024)</p>
+      <p>Full Stack Developer</p>
+      <p>(Nov 2023 - Present)</p>
     </ListSectionDateHeader>
     <p>Chaos1 - Sydney, NSW</p>
   </div>
@@ -51,7 +51,7 @@
   <div>
     <ListSectionDateHeader>
       <p>Bachelor of Engineering (Software Engineering Major)</p>
-      <p>(Feb 2020 - Jun 2024)</p>
+      <p>(Feb 2020 - November 2024)</p>
     </ListSectionDateHeader>
     <p>University of Technology, Sydney - Sydney, NSW</p>
   </div>
