@@ -1,7 +1,17 @@
 <script lang="ts">
-  export let link: string;
-  export let text: string;
-  export let downloadName: string;
+  interface Props {
+    link: string;
+    text: string;
+    downloadName: string;
+    children?: import('svelte').Snippet;
+  }
+
+  let {
+    link,
+    text,
+    downloadName,
+    children
+  }: Props = $props();
 </script>
 
 <div class="p-1">
@@ -12,7 +22,7 @@
       <div
         class="flex flex-row text-white rounded-1 max-h-52 align-middle justify-center gap-2 text-2xl"
       >
-        <slot />
+        {@render children?.()}
         <p>{text}</p>
       </div>
     </div>

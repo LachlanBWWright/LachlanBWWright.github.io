@@ -1,6 +1,11 @@
 <script lang="ts">
-  export let link: string;
-  export let text: string;
+  interface Props {
+    link: string;
+    text: string;
+    children?: import('svelte').Snippet;
+  }
+
+  let { link, text, children }: Props = $props();
 </script>
 
 <a class="p-1 w-full h-full" href="{link}">
@@ -10,7 +15,7 @@
     <div
       class="flex flex-row text-white rounded-1 max-h-52 align-middle justify-center gap-2 text-2xl"
     >
-      <slot />
+      {@render children?.()}
       <p>{text}</p>
     </div>
   </div>

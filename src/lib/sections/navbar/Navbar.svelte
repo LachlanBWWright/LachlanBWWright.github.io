@@ -8,10 +8,10 @@
   //Buttons that appear on mobile view (May be hidden by virtue of a hidden parent on desktop)
   let mobileUnselectedButton = "hover:text-blue-500 transition duration-500";
   let mobileSelectedButton = "text-blue-500 transition duration-500";
-  let currentPosition = "header"; //The current position of the page, used to determine which button should be highlighted
+  let currentPosition = $state("header"); //The current position of the page, used to determine which button should be highlighted
 
-  let dropdownExpanded = false;
-  let scrolledToTop = true;
+  let dropdownExpanded = $state(false);
+  let scrolledToTop = $state(true);
 
   function openDropdown() {
     dropdownExpanded = true;
@@ -94,48 +94,48 @@
   {#if dropdownExpanded}
     <button
       class="sm:hidden aspect-square rounded-md border-2 px-2 border-white"
-      on:click="{closeDropdown}">=</button
+      onclick={closeDropdown}>=</button
     >
   {:else}
     <button
       class="sm:hidden aspect-square rounded-md border-2 px-2 border-white"
-      on:click="{openDropdown}">=</button
+      onclick={openDropdown}>=</button
     >
   {/if}
   <button
     class="{currentPosition === 'header'
       ? mobileSelectedButton
       : mobileUnselectedButton}"
-    on:click="{(e) => handleNavbarClick(e, 'header')}">Profile</button
+    onclick={(e) => handleNavbarClick(e, 'header')}>Profile</button
   >
   <button
     class="{currentPosition === 'competencies'
       ? selectedButton
       : unselectedButton}"
-    on:click="{(e) => handleNavbarClick(e, 'competencies')}"
+    onclick={(e) => handleNavbarClick(e, 'competencies')}
     >Competencies</button
   >
   <button
     class="{currentPosition === 'experience'
       ? selectedButton
       : unselectedButton}"
-    on:click="{(e) => handleNavbarClick(e, 'experience')}">Experience</button
+    onclick={(e) => handleNavbarClick(e, 'experience')}>Experience</button
   >
   <button
     class="{currentPosition === 'portfolio'
       ? selectedButton
       : unselectedButton}"
-    on:click="{(e) => handleNavbarClick(e, 'portfolio')}">Portfolio</button
+    onclick={(e) => handleNavbarClick(e, 'portfolio')}>Portfolio</button
   >
   <button
     class="{currentPosition === 'resume' ? selectedButton : unselectedButton}"
-    on:click="{(e) => handleNavbarClick(e, 'resume')}">Resume</button
+    onclick={(e) => handleNavbarClick(e, 'resume')}>Resume</button
   >
   <button
     class="{currentPosition === 'academic-record'
       ? selectedButton
       : unselectedButton}"
-    on:click="{(e) => handleNavbarClick(e, 'academic-record')}"
+    onclick={(e) => handleNavbarClick(e, 'academic-record')}
     >Academic Record</button
   >
   {#if dropdownExpanded}
@@ -146,33 +146,33 @@
         class="{currentPosition === 'competencies'
           ? mobileSelectedButton
           : mobileUnselectedButton}"
-        on:click="{(e) => handleNavbarClick(e, 'competencies')}"
+        onclick={(e) => handleNavbarClick(e, 'competencies')}
         >Competencies</button
       >
       <button
         class="{currentPosition === 'experience'
           ? mobileSelectedButton
           : mobileUnselectedButton}"
-        on:click="{(e) => handleNavbarClick(e, 'experience')}"
+        onclick={(e) => handleNavbarClick(e, 'experience')}
         >Experience</button
       >
       <button
         class="{currentPosition === 'portfolio'
           ? mobileSelectedButton
           : mobileUnselectedButton}"
-        on:click="{(e) => handleNavbarClick(e, 'portfolio')}">Portfolio</button
+        onclick={(e) => handleNavbarClick(e, 'portfolio')}>Portfolio</button
       >
       <button
         class="{currentPosition === 'resume'
           ? mobileSelectedButton
           : mobileUnselectedButton}"
-        on:click="{(e) => handleNavbarClick(e, 'resume')}">Resume</button
+        onclick={(e) => handleNavbarClick(e, 'resume')}>Resume</button
       >
       <button
         class="{currentPosition === 'academic-record'
           ? mobileSelectedButton
           : mobileUnselectedButton}"
-        on:click="{(e) => handleNavbarClick(e, 'academic-record')}"
+        onclick={(e) => handleNavbarClick(e, 'academic-record')}
         >Academic Record</button
       >
     </div>

@@ -1,4 +1,12 @@
+<script lang="ts">
+  interface Props {
+    children?: import('svelte').Snippet;
+  }
+
+  let { children }: Props = $props();
+</script>
+
 <div class="flex flex-col gap-2">
-  <slot />
+  {@render children?.()}
   <hr class="pt-2 pb-4" />
 </div>
