@@ -3,11 +3,13 @@
 
   //Buttons that appear on desktop view, but are hidden on mobile view
   let unselectedButton =
-    "hover:text-blue-500 hidden sm:block transition duration-500";
-  let selectedButton = "text-blue-500 hidden sm:block transition duration-500";
+    "hover:font-bold transition-all duration-200 hidden sm:block transition";
+  let selectedButton =
+    "font-bold transition-all duration-200 hidden sm:block transition";
   //Buttons that appear on mobile view (May be hidden by virtue of a hidden parent on desktop)
-  let mobileUnselectedButton = "hover:text-blue-500 transition duration-500";
-  let mobileSelectedButton = "text-blue-500 transition duration-500";
+  let mobileUnselectedButton =
+    "hover:font-bold transition-all duration-200 transition";
+  let mobileSelectedButton = "font-bold transition-all duration-200 transition";
   let currentPosition = $state("header"); //The current position of the page, used to determine which button should be highlighted
 
   let dropdownExpanded = $state(false);
@@ -88,8 +90,8 @@
 <nav
   id="navbar"
   class={scrolledToTop && !dropdownExpanded
-    ? "sticky top-0 flex flex-row items-center gap-6 p-1 w-full bg-[#000000] shadow-2xl text-white text-lg sm:text-base lg:text-xl xl:text-2xl justify-center h-12 sm:h-10 transition duration-500 z-10"
-    : "sticky top-0 flex flex-row items-center gap-6 p-1 w-full bg-[#222222] shadow-2xl text-white text-lg sm:text-base lg:text-xl xl:text-2xl justify-center h-12 sm:h-10 transition duration-500 z-10"}
+    ? "sticky top-0 flex flex-row items-center gap-6 p-1 w-full bg-transparent shadow-2xl text-white text-lg sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl justify-center h-20 sm:h-16 transition duration-500 z-10"
+    : "sticky top-0 flex flex-row items-center gap-6 p-1 w-full bg-primary shadow-2xl text-white text-lg sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl justify-center h-20 sm:h-16 transition duration-500 z-10"}
 >
   {#if dropdownExpanded}
     <button
@@ -128,12 +130,11 @@
     class={currentPosition === "academic-record"
       ? selectedButton
       : unselectedButton}
-    onclick={(e) => handleNavbarClick(e, "academic-record")}
-    >Academic Record</button
+    onclick={(e) => handleNavbarClick(e, "academic-record")}>Records</button
   >
   {#if dropdownExpanded}
     <div
-      class={"flex flex-col absolute left-0 top-[40px] sm:top-[32px] w-screen bg-[#333333] sm:hidden z-10 px-2 transition-all duration-500 truncate"}
+      class={"flex flex-col absolute left-0 top-[80px] sm:top-[72px] w-screen bg-primary-dark sm:hidden z-10 px-2 transition-all duration-500 truncate"}
     >
       <button
         class={currentPosition === "header"
@@ -170,8 +171,7 @@
         class={currentPosition === "academic-record"
           ? mobileSelectedButton
           : mobileUnselectedButton}
-        onclick={(e) => handleNavbarClick(e, "academic-record")}
-        >Academic Record</button
+        onclick={(e) => handleNavbarClick(e, "academic-record")}>Records</button
       >
     </div>
   {/if}
