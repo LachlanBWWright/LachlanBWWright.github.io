@@ -1,6 +1,8 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
+  let baseButton = "transition duration-500";
+
   //Buttons that appear on desktop view, but are hidden on mobile view
   let unselectedButton =
     "hover:font-bold transition-all duration-200 hidden sm:block transition";
