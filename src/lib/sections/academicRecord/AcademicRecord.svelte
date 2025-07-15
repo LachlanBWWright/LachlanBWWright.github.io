@@ -1,39 +1,91 @@
 <script>
   import Heading from "$lib/headers/Heading.svelte";
-  import ListSectionHeader from "$lib/lists/ListSectionHeader.svelte";
-  import BaseList from "$lib/lists/BaseList.svelte";
+  import Card from "$lib/cards/Card.svelte";
+  import WhiteLinkButton from "$lib/buttons/WhiteLinkButton.svelte";
+  import Subheading from "$lib/headers/Subheading.svelte";
 </script>
 
-<div id="academic-record" class="flex flex-col gap-1">
+<div id="academic-record" class="flex flex-col gap-3">
   <Heading>Academic Record</Heading>
-  <ListSectionHeader
-    >Bachelor of Engineering (Honours) (Software Major)</ListSectionHeader
-  >
-  <p class="text-md italic">University of Technology Sydney</p>
-  <a
-    class="underline text-blue-600 visited:text-violet-800 hover:text-violet-800"
-    href="/AcademicRecord.pdf"
-    download="Lachlan Wright - Academic Transcript"
-    >Download Academic Transcript</a
-  >
+  <Card>
+    <div class="flex flex-col gap-1 items-start">
+      <div class="w-full text-center text-2xl pb-2">
+        <Subheading>Bachelor of Engineering (Software, Honours)</Subheading>
+      </div>
+      <p class="w-full text-center text-primary font-bold text-2xl">
+        University of Technology Sydney
+      </p>
+    </div>
 
-  <p>Average Results</p>
-  <BaseList>
-    <li>Grade Point Average: 6.47/7.00</li>
-    <li>Weighted Average Mark (WAM): 85.97%</li>
-  </BaseList>
-  <p>Subject Highlights</p>
-  <BaseList>
-    <li>Applications Programming: 92%</li>
-    <li>Data Structures and Algorithms: 98%</li>
-    <li>Software Engineering Studio 1A: 96%</li>
-    <li>Software Engineering Studio 1B: 91%</li>
-    <li>Introduction to Data Analytics: 89%</li>
-    <li>Secure Programming and Penetration Testing: 91%</li>
-    <li>Software Development Studio: 98%</li>
-    <li>Software Architecture: 95%</li>
-    <li>Software Design Studio: 84%</li>
-    <li>Software Innovation Studio: 87%</li>
-    <li>Engineering Capstone: High Distinction (Not Graded)</li>
-  </BaseList>
+    <table class="min-w-full text-left border-separate border-spacing-y-1">
+      <tbody>
+        <tr>
+          <td colspan="2" class="font-bold text-2xl text-primary pb-2"
+            >Average Results</td
+          >
+        </tr>
+        <tr>
+          <td class="py-1 pr-4">Grade Point Average</td>
+          <td class="py-1 pl-4 text-right">6.47/7.00</td>
+        </tr>
+        <tr>
+          <td class="py-1 pr-4">Weighted Average Mark (WAM)</td>
+          <td class="py-1 pl-4 text-right">85.97%</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="font-bold text-2xl text-primary pb-2"
+            >Subject Highlights</td
+          >
+        </tr>
+        <tr>
+          <td class="py-1 pr-4">Applications Programming</td>
+          <td class="py-1 pl-4 text-right">92%</td>
+        </tr>
+        <tr>
+          <td class="py-1 pr-4">Data Structures and Algorithms</td>
+          <td class="py-1 pl-4 text-right">98%</td>
+        </tr>
+        <tr>
+          <td class="py-1 pr-4">Software Engineering Studio 1A</td>
+          <td class="py-1 pl-4 text-right">96%</td>
+        </tr>
+        <tr>
+          <td class="py-1 pr-4">Software Engineering Studio 1B</td>
+          <td class="py-1 pl-4 text-right">91%</td>
+        </tr>
+        <tr>
+          <td class="py-1 pr-4">Introduction to Data Analytics</td>
+          <td class="py-1 pl-4 text-right">89%</td>
+        </tr>
+        <tr>
+          <td class="py-1 pr-4">Secure Programming and Penetration Testing</td>
+          <td class="py-1 pl-4 text-right">91%</td>
+        </tr>
+        <tr>
+          <td class="py-1 pr-4">Software Development Studio</td>
+          <td class="py-1 pl-4 text-right">98%</td>
+        </tr>
+        <tr>
+          <td class="py-1 pr-4">Software Architecture</td>
+          <td class="py-1 pl-4 text-right">95%</td>
+        </tr>
+        <tr>
+          <td class="py-1 pr-4">Software Design Studio</td>
+          <td class="py-1 pl-4 text-right">84%</td>
+        </tr>
+        <tr>
+          <td class="py-1 pr-4">Software Innovation Studio</td>
+          <td class="py-1 pl-4 text-right">87%</td>
+        </tr>
+        <tr>
+          <td class="py-1 pr-4">Engineering Capstone</td>
+          <td class="py-1 pl-4 text-right">High Distinction</td>
+        </tr>
+      </tbody>
+    </table>
+    <WhiteLinkButton
+      link="/AcademicRecord.pdf"
+      text="Download Academic Transcript">💾</WhiteLinkButton
+    >
+  </Card>
 </div>

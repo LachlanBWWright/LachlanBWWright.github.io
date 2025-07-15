@@ -17,6 +17,7 @@ const config = {
     paths: {
       base: dev ? "" : process.env.BASE_PATH,
     },
+    //inlineStyleThreshold: Infinity,
   },
 };
 

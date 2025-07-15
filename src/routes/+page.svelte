@@ -8,19 +8,22 @@
   import AcademicRecord from "$lib/sections/academicRecord/AcademicRecord.svelte";
 </script>
 
-<div class="bg-black min-h-screen text-white items-center flex flex-col pb-16">
+<div
+  class="bg-background min-h-screen text-white items-center flex flex-col pb-16 text-xl"
+>
   <Navbar />
-  <div class="max-w-[1300px] w-full px-2 sm:px-4">
+  <div class="flex flex-col max-w-[1300px] w-full px-2 sm:px-4 gap-40">
     <Header />
-    <br />
+
     <Competencies />
-    <br />
+
     <Experience />
-    <br />
+
     <Portfolio />
-    <br />
+
     <Resume />
-    <br />
+
     <AcademicRecord />
+    <div class="pb-100"></div>
   </div>
 </div>
