@@ -1,8 +1,9 @@
 <script>
   import Heading from "$lib/headers/Heading.svelte";
   import Subheading from "$lib/headers/Subheading.svelte";
+  import ListSectionHeader from "$lib/lists/ListSectionHeader.svelte";
+  import ListSectionSubHeader from "$lib/lists/ListSectionSubHeader.svelte";
   import BaseList from "$lib/lists/BaseList.svelte";
-  import ListSectionDateHeader from "$lib/lists/ListSectionDateHeader.svelte";
   import Card from "$lib/cards/Card.svelte";
 </script>
 
@@ -10,25 +11,12 @@
   <Heading>Experience</Heading>
   <Card>
     <Subheading>Employment</Subheading>
-    <div>
-      <ListSectionDateHeader>
-        <p>Proactive Services Team Member (Casual Employment)</p>
-        <p>(Sep 2022 - December 2024)</p>
-      </ListSectionDateHeader>
-      <p>Woolworths - Leura, NSW</p>
-    </div>
-    <BaseList>
-      <li>Exhibited strong dedication and consistent performance.</li>
-    </BaseList>
-
-    <br />
 
     <div>
-      <ListSectionDateHeader>
-        <p>Full Stack Developer</p>
-        <p>(Nov 2023 - Present)</p>
-      </ListSectionDateHeader>
-      <p>Chaos1 - Sydney, NSW</p>
+      <ListSectionHeader>
+        Full Stack Developer (Nov 2023 - Present)
+      </ListSectionHeader>
+      <ListSectionSubHeader>Chaos1 - Sydney, NSW</ListSectionSubHeader>
     </div>
     <BaseList>
       <li>Developed a website utilising ReactJS a MERN stack.</li>
@@ -51,11 +39,12 @@
 
     <Subheading>Education</Subheading>
     <div>
-      <ListSectionDateHeader>
-        <p>Bachelor of Engineering (Software, Honours)</p>
-        <p>(Feb 2020 - November 2024)</p>
-      </ListSectionDateHeader>
-      <p>University of Technology, Sydney - Sydney, NSW</p>
+      <ListSectionHeader>
+        Bachelor of Engineering (Software, Honours) (Feb 2020 - November 2024)
+      </ListSectionHeader>
+      <ListSectionSubHeader
+        >University of Technology, Sydney - Sydney, NSW</ListSectionSubHeader
+      >
     </div>
     <BaseList>
       <li>Attained a total of 147 Credit Points.</li>
@@ -73,11 +62,8 @@
 
     <Subheading>Certifications</Subheading>
     <div>
-      <ListSectionDateHeader>
-        <p>Azure Fundamentals</p>
-        <p>(Jul 2021)</p>
-      </ListSectionDateHeader>
-      <p>Microsoft</p>
+      <ListSectionHeader>Azure Fundamentals (Jul 2021)</ListSectionHeader>
+      <ListSectionSubHeader>Microsoft</ListSectionSubHeader>
     </div>
     <BaseList>
       <li>

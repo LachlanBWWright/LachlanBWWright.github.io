@@ -16,9 +16,7 @@
   <Card>
     <div class="grid grid-cols-1 gap-6">
       <PortfolioCard>
-        <Subheading>
-          <p>Cryogenic Wiring Simulation</p>
-        </Subheading>
+        <Subheading>Cryogenic Wiring Simulation</Subheading>
         <PortfolioBody>
           <div>
             <li>
@@ -59,11 +57,9 @@
         </PortfolioBody>
       </PortfolioCard>
       <PortfolioCard>
-        <Subheading>
-          <p>Pangea Resource Edit</p>
-        </Subheading>
+        <Subheading>Pangea Resource Edit</Subheading>
         <PortfolioBody>
-          <div>
+          <div class="flex flex-col">
             <div class="grid grid-cols-2 gap-4">
               <WhiteLinkButton
                 text="Frontend"
@@ -117,11 +113,9 @@
         </PortfolioBody>
       </PortfolioCard>
       <PortfolioCard>
-        <Subheading>
-          <p>Online Exam System</p>
-        </Subheading>
+        <Subheading>Online Exam System</Subheading>
         <PortfolioBody>
-          <div>
+          <div class="flex flex-col">
             <WhiteLinkButton
               text="Repository"
               link="https://github.com/LachlanBWWright/T1-Online-Exam-System"
@@ -153,11 +147,9 @@
         </PortfolioBody>
       </PortfolioCard>
       <PortfolioCard>
-        <Subheading>
-          <p>Deal Scanner</p>
-        </Subheading>
+        <Subheading>Deal Scanner</Subheading>
         <PortfolioBody>
-          <div>
+          <div class="flex flex-col">
             <WhiteLinkButton
               text="Repository"
               link="https://github.com/LachlanBWWright/LBWW-Deal-Scanner"
@@ -184,11 +176,9 @@
         </PortfolioBody>
       </PortfolioCard>
       <PortfolioCard>
-        <Subheading>
-          <p>MERN Mafia</p>
-        </Subheading>
+        <Subheading>MERN Mafia</Subheading>
         <PortfolioBody>
-          <div>
+          <div class="flex flex-col">
             <div class="grid grid-cols-2 gap-4">
               <WhiteLinkButton
                 text="React DOM"
@@ -255,11 +245,9 @@
         </PortfolioBody>
       </PortfolioCard>
       <PortfolioCard>
-        <Subheading>
-          <p>Public Transport App</p>
-        </Subheading>
+        <Subheading>Public Transport App</Subheading>
         <PortfolioBody>
-          <div>
+          <div class="flex flex-col">
             <WhiteLinkButton
               text="Repository"
               link="https://github.com/LachlanBWWright/Flutter_Timetable"

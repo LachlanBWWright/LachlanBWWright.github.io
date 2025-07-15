@@ -8,7 +8,7 @@
   let { link, text, children }: Props = $props();
 </script>
 
-<a class="p-1 w-full h-full" href={link}>
+<a class="p-1 w-full" href={link}>
   <div
     class="bg-primary hover:bg-primary/80 shadow-sm hover:shadow-lg transition-all p-2 rounded-lg"
   >

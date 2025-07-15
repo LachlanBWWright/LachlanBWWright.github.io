@@ -5,11 +5,12 @@
   let unselectedButton =
     "hover:font-bold transition-all duration-200 hidden sm:block transition";
   let selectedButton =
-    "font-bold transition-all duration-200 hidden sm:block transition";
+    "font-bold transition-all  hidden sm:block underline duration-200 transition";
   //Buttons that appear on mobile view (May be hidden by virtue of a hidden parent on desktop)
   let mobileUnselectedButton =
     "hover:font-bold transition-all duration-200 transition";
-  let mobileSelectedButton = "font-bold transition-all duration-200 transition";
+  let mobileSelectedButton =
+    "font-bold transition-all underline duration-200 transition";
   let currentPosition = $state("header"); //The current position of the page, used to determine which button should be highlighted
 
   let dropdownExpanded = $state(false);

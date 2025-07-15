@@ -12,7 +12,9 @@
       <div class="w-full text-center text-2xl pb-2">
         <Subheading>Bachelor of Engineering (Software, Honours)</Subheading>
       </div>
-      <p class="w-full text-center">University of Technology Sydney</p>
+      <p class="w-full text-center text-primary font-bold text-2xl">
+        University of Technology Sydney
+      </p>
     </div>
 
     <table class="min-w-full text-left border-separate border-spacing-y-1">
