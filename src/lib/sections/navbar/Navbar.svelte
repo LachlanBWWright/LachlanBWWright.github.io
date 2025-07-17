@@ -32,9 +32,9 @@
     if (!anchor) return;
 
     closeDropdown();
-
+    const navbarRef = document.getElementById("navbar");
     window.scrollTo({
-      top: anchor.offsetTop - 32,
+      top: anchor.offsetTop - (navbarRef?.clientHeight ?? 32),
       behavior: "smooth",
     });
   }
