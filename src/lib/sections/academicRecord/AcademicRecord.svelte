@@ -15,77 +15,77 @@
       <p class="w-full text-center text-primary font-bold text-2xl">
         University of Technology Sydney
       </p>
+      <table class="min-w-full text-left border-separate border-spacing-y-1">
+        <tbody>
+          <tr>
+            <td colspan="2" class="font-bold text-2xl text-primary pb-2"
+              >Average Results</td
+            >
+          </tr>
+          <tr>
+            <td class="py-1 pr-4">Grade Point Average</td>
+            <td class="py-1 pl-4 text-right">6.47/7.00</td>
+          </tr>
+          <tr>
+            <td class="py-1 pr-4">Weighted Average Mark (WAM)</td>
+            <td class="py-1 pl-4 text-right">85.97%</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="font-bold text-2xl text-primary pb-2"
+              >Subject Highlights</td
+            >
+          </tr>
+          <tr>
+            <td class="py-1 pr-4">Applications Programming</td>
+            <td class="py-1 pl-4 text-right">92%</td>
+          </tr>
+          <tr>
+            <td class="py-1 pr-4">Data Structures and Algorithms</td>
+            <td class="py-1 pl-4 text-right">98%</td>
+          </tr>
+          <tr>
+            <td class="py-1 pr-4">Software Engineering Studio 1A</td>
+            <td class="py-1 pl-4 text-right">96%</td>
+          </tr>
+          <tr>
+            <td class="py-1 pr-4">Software Engineering Studio 1B</td>
+            <td class="py-1 pl-4 text-right">91%</td>
+          </tr>
+          <tr>
+            <td class="py-1 pr-4">Introduction to Data Analytics</td>
+            <td class="py-1 pl-4 text-right">89%</td>
+          </tr>
+          <tr>
+            <td class="py-1 pr-4">Secure Programming and Penetration Testing</td
+            >
+            <td class="py-1 pl-4 text-right">91%</td>
+          </tr>
+          <tr>
+            <td class="py-1 pr-4">Software Development Studio</td>
+            <td class="py-1 pl-4 text-right">98%</td>
+          </tr>
+          <tr>
+            <td class="py-1 pr-4">Software Architecture</td>
+            <td class="py-1 pl-4 text-right">95%</td>
+          </tr>
+          <tr>
+            <td class="py-1 pr-4">Software Design Studio</td>
+            <td class="py-1 pl-4 text-right">84%</td>
+          </tr>
+          <tr>
+            <td class="py-1 pr-4">Software Innovation Studio</td>
+            <td class="py-1 pl-4 text-right">87%</td>
+          </tr>
+          <tr>
+            <td class="py-1 pr-4">Engineering Capstone</td>
+            <td class="py-1 pl-4 text-right">High Distinction</td>
+          </tr>
+        </tbody>
+      </table>
+      <WhiteLinkButton
+        link="/AcademicRecord.pdf"
+        text="Download Academic Transcript">💾</WhiteLinkButton
+      >
     </div>
-
-    <table class="min-w-full text-left border-separate border-spacing-y-1">
-      <tbody>
-        <tr>
-          <td colspan="2" class="font-bold text-2xl text-primary pb-2"
-            >Average Results</td
-          >
-        </tr>
-        <tr>
-          <td class="py-1 pr-4">Grade Point Average</td>
-          <td class="py-1 pl-4 text-right">6.47/7.00</td>
-        </tr>
-        <tr>
-          <td class="py-1 pr-4">Weighted Average Mark (WAM)</td>
-          <td class="py-1 pl-4 text-right">85.97%</td>
-        </tr>
-        <tr>
-          <td colspan="2" class="font-bold text-2xl text-primary pb-2"
-            >Subject Highlights</td
-          >
-        </tr>
-        <tr>
-          <td class="py-1 pr-4">Applications Programming</td>
-          <td class="py-1 pl-4 text-right">92%</td>
-        </tr>
-        <tr>
-          <td class="py-1 pr-4">Data Structures and Algorithms</td>
-          <td class="py-1 pl-4 text-right">98%</td>
-        </tr>
-        <tr>
-          <td class="py-1 pr-4">Software Engineering Studio 1A</td>
-          <td class="py-1 pl-4 text-right">96%</td>
-        </tr>
-        <tr>
-          <td class="py-1 pr-4">Software Engineering Studio 1B</td>
-          <td class="py-1 pl-4 text-right">91%</td>
-        </tr>
-        <tr>
-          <td class="py-1 pr-4">Introduction to Data Analytics</td>
-          <td class="py-1 pl-4 text-right">89%</td>
-        </tr>
-        <tr>
-          <td class="py-1 pr-4">Secure Programming and Penetration Testing</td>
-          <td class="py-1 pl-4 text-right">91%</td>
-        </tr>
-        <tr>
-          <td class="py-1 pr-4">Software Development Studio</td>
-          <td class="py-1 pl-4 text-right">98%</td>
-        </tr>
-        <tr>
-          <td class="py-1 pr-4">Software Architecture</td>
-          <td class="py-1 pl-4 text-right">95%</td>
-        </tr>
-        <tr>
-          <td class="py-1 pr-4">Software Design Studio</td>
-          <td class="py-1 pl-4 text-right">84%</td>
-        </tr>
-        <tr>
-          <td class="py-1 pr-4">Software Innovation Studio</td>
-          <td class="py-1 pl-4 text-right">87%</td>
-        </tr>
-        <tr>
-          <td class="py-1 pr-4">Engineering Capstone</td>
-          <td class="py-1 pl-4 text-right">High Distinction</td>
-        </tr>
-      </tbody>
-    </table>
-    <WhiteLinkButton
-      link="/AcademicRecord.pdf"
-      text="Download Academic Transcript">💾</WhiteLinkButton
-    >
   </Card>
 </div>

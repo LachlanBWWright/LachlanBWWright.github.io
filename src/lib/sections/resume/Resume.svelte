@@ -14,11 +14,11 @@
         alt="Resume Page 1"
         class="w-full h-auto max-h-[500px] object-contain"
       />
+      <DownloadButton
+        text="Download PDF"
+        link="/Resume.pdf"
+        downloadName="Lachlan Wright - Resume">💾</DownloadButton
+      >
     </div>
-    <DownloadButton
-      text="Download PDF"
-      link="/Resume.pdf"
-      downloadName="Lachlan Wright - Resume">💾</DownloadButton
-    >
   </Card>
 </div>
