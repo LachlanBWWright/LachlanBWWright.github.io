@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
+  import { getCurrentSection } from "$lib/utils/scrollUtils";
 
   let baseButton = "transition duration-500";
 
@@ -49,45 +50,12 @@
       if (window.scrollY === 0) scrolledToTop = true;
       else scrolledToTop = false;
 
-      //Always highlight top item if scrolled to top
-      if (scrolledToTop) {
-        currentPosition = "header";
-        return;
-      }
-
-      //Highlight bottom item if scrolled to bottom
-      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-        currentPosition = "academic-record";
-        return;
-      }
-
-      for (const item of [
-        "header",
-        "competencies",
-        "experience",
-        "portfolio",
-        "resume",
-        "academic-record",
-      ]) {
-        const anchor = document.getElementById(item);
-        if (!anchor) return;
-
-        if (
-          window.scrollY >=
-          anchor.offsetTop -
-            navbarHeight -
-            (window.innerHeight - navbarHeight) / 2
-        ) {
-          currentPosition = item;
-        } else break;
-      }
+      currentPosition = getCurrentSection(navbarHeight);
     };
 
     document.addEventListener("scroll", scrollFn);
     return () => document.removeEventListener("scroll", scrollFn);
   });
-
-  onMount(() => {});
 </script>
 
 <nav
