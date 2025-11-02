@@ -5,7 +5,11 @@
 </script>
 
 <div id="header" class="flex flex-col p-2 text-center items-center gap-2">
-  <p class="text-2xl sm:text-4xl md:text-6xl font-bold">Lachlan Wright</p>
+  <p
+    class="text-3xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-9xl font-bold"
+  >
+    Lachlan Wright
+  </p>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 w-full sm:w-fit">
     <WhiteLinkButton
