@@ -19,19 +19,11 @@
 
       <Competencies />
 
-      <hr class="border-t border-gray-600 my-8" />
-
       <Experience />
-
-      <hr class="border-t border-gray-600 my-8" />
 
       <Portfolio />
 
-      <hr class="border-t border-gray-600 my-8" />
-
       <Resume />
-
-      <hr class="border-t border-gray-600 my-8" />
 
       <AcademicRecord />
       <div class="pb-100"></div>
