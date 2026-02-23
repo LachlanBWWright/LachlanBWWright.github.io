@@ -17,7 +17,7 @@
       <PortfolioCard>
         <Subheading>Cryogenic Wiring Simulation</Subheading>
         <PortfolioBody>
-          <div>
+          <div class="flex flex-col h-full">
             <li>
               Created a React website to provide a visual means of interfacing
               with an existing Python model.
@@ -35,7 +35,8 @@
               model’s outputs.
             </li>
           </div>
-          <Carousel>
+          <div class="h-full">
+            <Carousel>
             <CarouselItem>
               <iframe
                 class="w-full h-full"
@@ -53,13 +54,14 @@
               />
             </CarouselItem>
           </Carousel>
+          </div>
         </PortfolioBody>
       </PortfolioCard>
       <PortfolioCard>
         <Subheading>Pangea Resource Edit</Subheading>
         <PortfolioBody>
-          <div class="flex flex-col">
-            <div class="grid grid-cols-2 gap-4">
+          <div class="flex flex-col h-full">
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
               <WhiteLinkButton
                 text="Frontend"
                 link="https://github.com/LachlanBWWright/PangeaRSEdit"
@@ -89,7 +91,8 @@
               data
             </li>
           </div>
-          <Carousel>
+          <div class="h-full">
+            <Carousel>
             <CarouselItem>
               <img src="portfolio/pangea/Pangea1.png" alt="" />
             </CarouselItem>
@@ -109,14 +112,15 @@
               <img src="portfolio/pangea/Pangea6.png" alt="" />
             </CarouselItem>
           </Carousel>
+          </div>
         </PortfolioBody>
       </PortfolioCard>
       <!-- Android Ports section added after Pangea Resource Edit -->
       <PortfolioCard>
         <Subheading>Android Ports</Subheading>
         <PortfolioBody>
-          <div class="flex flex-col">
-            <div class="grid grid-cols-2 gap-4">
+          <div class="flex flex-col h-full">
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
               <WhiteLinkButton
                 text="Otto Matic"
                 link="https://github.com/LachlanBWWright/OttoMatic-Android"
@@ -154,7 +158,8 @@
               A collection of games from Pangea Software ported to Android.
             </li>
           </div>
-          <Carousel>
+          <div class="h-full">
+            <Carousel>
             <CarouselItem>
               <img src="portfolio/androidPorts/OttoMatic.jpg" alt="" />
             </CarouselItem>
@@ -174,12 +179,13 @@
               <img src="portfolio/androidPorts/Nanosaur2.jpg" alt="" />
             </CarouselItem>
           </Carousel>
+          </div>
         </PortfolioBody>
       </PortfolioCard>
       <PortfolioCard>
         <Subheading>Online Exam System</Subheading>
         <PortfolioBody>
-          <div class="flex flex-col">
+          <div class="flex flex-col h-full">
             <WhiteLinkButton
               text="Repository"
               link="https://github.com/LachlanBWWright/T1-Online-Exam-System"
@@ -199,7 +205,8 @@
               a collaborative environment.
             </li>
           </div>
-          <Carousel>
+          <div class="h-full">
+            <Carousel>
             <CarouselItem>
               <img
                 src="portfolio/exam/Exam1.png"
@@ -207,12 +214,13 @@
               />
             </CarouselItem>
           </Carousel>
+          </div>
         </PortfolioBody>
       </PortfolioCard>
       <PortfolioCard>
         <Subheading>Deal Scanner</Subheading>
         <PortfolioBody>
-          <div class="flex flex-col">
+          <div class="flex flex-col h-full">
             <WhiteLinkButton
               text="Repository"
               link="https://github.com/LachlanBWWright/LBWW-Deal-Scanner"
@@ -230,17 +238,19 @@
               to be automatically scanned periodically.
             </li>
           </div>
-          <Carousel>
+          <div class="h-full">
+            <Carousel>
             <CarouselItem>
               <img src="portfolio/deals/Deals1.png" alt="Screenshot of code." />
             </CarouselItem>
           </Carousel>
+          </div>
         </PortfolioBody>
       </PortfolioCard>
       <PortfolioCard>
         <Subheading>LBWW Mafia</Subheading>
         <PortfolioBody>
-          <div class="flex flex-col">
+          <div class="flex flex-col h-full">
             <div class="grid grid-cols-1 gap-4">
               <WhiteLinkButton
                 text="Repository"
@@ -268,7 +278,8 @@
               Database using Mongoose.
             </li>
           </div>
-          <Carousel>
+          <div class="h-full">
+            <Carousel>
             <CarouselItem>
               <iframe
                 class="w-full h-full"
@@ -298,12 +309,13 @@
               />
             </CarouselItem>
           </Carousel>
+          </div>
         </PortfolioBody>
       </PortfolioCard>
       <PortfolioCard>
         <Subheading>Public Transport App</Subheading>
         <PortfolioBody>
-          <div class="flex flex-col">
+          <div class="flex flex-col h-full">
             <WhiteLinkButton
               text="Repository"
               link="https://github.com/LachlanBWWright/Flutter_Timetable"
@@ -314,7 +326,8 @@
             </li>
             <li>Developed interfaces with Transport for NSW’s OpenData API.</li>
           </div>
-          <Carousel>
+          <div class="h-full">
+            <Carousel>
             <CarouselItem>
               <img
                 class="max-h-96"
@@ -337,6 +350,7 @@
               />
             </CarouselItem>
           </Carousel>
+          </div>
         </PortfolioBody>
       </PortfolioCard>
     </div>
