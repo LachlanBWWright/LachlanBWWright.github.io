@@ -1,6 +1,6 @@
-import sharp from 'sharp';
-import fs from 'fs';
-import path from 'path';
+import sharp from "sharp";
+import fs from "fs";
+import path from "path";
 
 // A small helper script that reads the first page of the PDF located in
 // `static/Resume.pdf` and writes a JPEG thumbnail (the old
@@ -12,9 +12,9 @@ import path from 'path';
 // or compiled with `tsc` if you prefer.
 
 async function generateThumbnail(): Promise<void> {
-  const projectRoot = path.resolve(__dirname, '..');
-  const inputPdf = path.join(projectRoot, 'static', 'Resume.pdf');
-  const outputImg = path.join(projectRoot, 'static', 'resume-page-1.jpg');
+  const projectRoot = path.resolve(__dirname, "..");
+  const inputPdf = path.join(projectRoot, "static", "Resume.pdf");
+  const outputImg = path.join(projectRoot, "static", "resume-page-1.jpg");
 
   if (!fs.existsSync(inputPdf)) {
     console.error(`Cannot find PDF at ${inputPdf}`);
@@ -27,9 +27,9 @@ async function generateThumbnail(): Promise<void> {
       .resize({ width: 800 })
       .jpeg({ quality: 80 })
       .toFile(outputImg);
-    console.log('Thumbnail generation complete!');
+    console.log("Thumbnail generation complete!");
   } catch (err) {
-    console.error('Error creating thumbnail:', err);
+    console.error("Error creating thumbnail:", err);
     process.exit(1);
   }
 }
