@@ -1,12 +1,10 @@
 <script>
   import WhiteLinkButton from "$lib/buttons/WhiteLinkButton.svelte";
-  import GitHubLogo from "$lib/icons/GitHubLogo.svelte";
-  import LinkedInLogo from "$lib/icons/LinkedInLogo.svelte";
 </script>
 
 <div id="header" class="flex flex-col p-2 text-center items-center gap-2">
   <p
-    class="text-3xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-9xl font-bold"
+    class="text-3xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-9xl font-bold text-white"
   >
     Lachlan Wright
   </p>
@@ -15,15 +13,11 @@
     <WhiteLinkButton
       link="https://www.github.com/LachlanBWWright"
       text="GitHub"
-    >
-      <GitHubLogo size={30} />
-    </WhiteLinkButton>
+    />
     <WhiteLinkButton
       link="https://www.linkedin.com/in/LachlanBWWright/"
       text="LinkedIn"
-    >
-      <LinkedInLogo size={30} />
-    </WhiteLinkButton>
+    />
   </div>
   <div class="py-5 px-2 sm:px-10 md:px-15 lg:px-20">
     <p class="text-justify">

@@ -4,5 +4,6 @@
   --color-primary: #008eb6;
   --color-primary-dark: #003f50;
   --color-card-bg: #00222b;
-  --color-background: #000d11;
+  /* desaturated background for a more muted look */
+  --color-background: #0a1318; /* slightly lighter and less saturated than #000d11 */
 }

@@ -12,13 +12,13 @@
       <div class="w-full text-center text-2xl pb-2">
         <Subheading>Bachelor of Engineering (Software, Honours)</Subheading>
       </div>
-      <p class="w-full text-center text-primary font-bold text-2xl">
+      <p class="w-full text-center text-white font-bold text-2xl">
         University of Technology Sydney
       </p>
       <table class="min-w-full text-left border-separate border-spacing-y-1">
         <tbody>
           <tr>
-            <td colspan="2" class="font-bold text-2xl text-primary pb-2"
+            <td colspan="2" class="font-bold text-2xl text-white pb-2"
               >Average Results</td
             >
           </tr>
@@ -31,7 +31,7 @@
             <td class="py-1 pl-4 text-right">85.97%</td>
           </tr>
           <tr>
-            <td colspan="2" class="font-bold text-2xl text-primary pb-2"
+            <td colspan="2" class="font-bold text-2xl text-white pb-2"
               >Subject Highlights</td
             >
           </tr>
@@ -84,8 +84,8 @@
       </table>
       <WhiteLinkButton
         link="/AcademicRecord.pdf"
-        text="Download Academic Transcript">💾</WhiteLinkButton
-      >
+        text="Download Academic Transcript"
+      />
     </div>
   </Card>
 </div>
