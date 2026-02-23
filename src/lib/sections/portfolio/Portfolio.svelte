@@ -70,8 +70,10 @@
               />
             </div>
             <li>
-              Developed a React-based level editor for the open-sourced 2001
-              video game “Otto Matic”.
+              Developed a React-based level editor for the open-sourced Pangea
+              Software games, notable for being bundled with Macintosh computers
+              in the late 90s and early 2000s, and later being ported as some of
+              the earlies iOS games.
             </li>
             <li>
               Forked and extended the Python “RSRCDump” library for editing MAC
@@ -105,6 +107,71 @@
             </CarouselItem>
             <CarouselItem>
               <img src="portfolio/pangea/Pangea6.png" alt="" />
+            </CarouselItem>
+          </Carousel>
+        </PortfolioBody>
+      </PortfolioCard>
+      <!-- Android Ports section added after Pangea Resource Edit -->
+      <PortfolioCard>
+        <Subheading>Android Ports</Subheading>
+        <PortfolioBody>
+          <div class="flex flex-col">
+            <div class="grid grid-cols-2 gap-4">
+              <WhiteLinkButton
+                text="Otto Matic"
+                link="https://github.com/LachlanBWWright/OttoMatic-Android"
+              />
+              <WhiteLinkButton
+                text="Billy Frontier"
+                link="https://github.com/LachlanBWWright/BillyFrontier-Android"
+              />
+              <WhiteLinkButton
+                text="Bugdom"
+                link="https://github.com/LachlanBWWright/Bugdom-android"
+              />
+              <WhiteLinkButton
+                text="Bugdom 2"
+                link="https://github.com/LachlanBWWright/Bugdom2-Android"
+              />
+              <WhiteLinkButton
+                text="Cro-Mag Rally"
+                link="https://github.com/LachlanBWWright/CroMagRally-Android"
+              />
+              <WhiteLinkButton
+                text="Mighty Mike"
+                link="https://github.com/LachlanBWWright/MightyMike-Android"
+              />
+              <WhiteLinkButton
+                text="Nanosaur"
+                link="https://github.com/LachlanBWWright/Nanosaur-android"
+              />
+              <WhiteLinkButton
+                text="Nanosaur 2"
+                link="https://github.com/LachlanBWWright/Nanosaur2-Android"
+              />
+            </div>
+            <li>
+              A collection of games from Pangea Software ported to Android.
+            </li>
+          </div>
+          <Carousel>
+            <CarouselItem>
+              <img src="portfolio/androidPorts/OttoMatic.jpg" alt="" />
+            </CarouselItem>
+            <CarouselItem>
+              <img src="portfolio/androidPorts/BillyFrontier.jpg" alt="" />
+            </CarouselItem>
+            <CarouselItem>
+              <img src="portfolio/androidPorts/Bugdom1.jpg" alt="" />
+            </CarouselItem>
+            <CarouselItem>
+              <img src="portfolio/androidPorts/Bugdom2.jpg" alt="" />
+            </CarouselItem>
+            <CarouselItem>
+              <img src="portfolio/androidPorts/Nanosaur1.jpg" alt="" />
+            </CarouselItem>
+            <CarouselItem>
+              <img src="portfolio/androidPorts/Nanosaur2.jpg" alt="" />
             </CarouselItem>
           </Carousel>
         </PortfolioBody>
@@ -171,17 +238,13 @@
         </PortfolioBody>
       </PortfolioCard>
       <PortfolioCard>
-        <Subheading>MERN Mafia</Subheading>
+        <Subheading>LBWW Mafia</Subheading>
         <PortfolioBody>
           <div class="flex flex-col">
-            <div class="grid grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 gap-4">
               <WhiteLinkButton
-                text="React DOM"
+                text="Repository"
                 link="https://github.com/LachlanBWWright/MERN-Mafia"
-              />
-              <WhiteLinkButton
-                text="React Native"
-                link="https://github.com/LachlanBWWright/MERN-Mafia-Mobile"
               />
             </div>
             <li>
