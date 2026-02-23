@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #008eb6;
-  --color-primary-dark: #003f50;
-  --color-card-bg: #00222b;
-  --color-background: #000d11;
+  /* Ocean Depths variables */
+  --color-primary: #0A1F44;        /* deep navy */
+  --color-primary-dark: #09193B;   /* slightly darker for hover/shadows */
+  --color-accent: #32C5FF;         /* cyan accent */
+  --color-card-bg: #2A2F3C;        /* greyer, desaturated surface */
+  --color-background: #0C0F14;     /* nearly black charcoal background */
+  --color-text-light: #E8EAF6;     /* off-white text */
 }

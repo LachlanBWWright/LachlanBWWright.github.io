@@ -5,7 +5,6 @@
   import Carousel from "$lib/carousel/Carousel.svelte";
   import CarouselItem from "$lib/carousel/CarouselItem.svelte";
   import WhiteLinkButton from "$lib/buttons/WhiteLinkButton.svelte";
-  import GitHubLogo from "$lib/icons/GitHubLogo.svelte";
   import Card from "$lib/cards/Card.svelte";
   import Heading from "$lib/headers/Heading.svelte";
   import Subheading from "$lib/headers/Subheading.svelte";
@@ -18,7 +17,7 @@
       <PortfolioCard>
         <Subheading>Cryogenic Wiring Simulation</Subheading>
         <PortfolioBody>
-          <div>
+          <div class="flex flex-col h-full">
             <li>
               Created a React website to provide a visual means of interfacing
               with an existing Python model.
@@ -36,45 +35,47 @@
               model’s outputs.
             </li>
           </div>
-          <Carousel>
-            <CarouselItem>
-              <iframe
-                class="w-full h-full"
-                src="https://www.youtube.com/embed/1Q-ZASEpHeI?si=2BspDC_boqL3fBAb"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-            </CarouselItem>
-            <CarouselItem>
-              <img
-                src="portfolio/cryo/Cryo1.png"
-                alt="Screenshot of web application."
-              />
-            </CarouselItem>
-          </Carousel>
+          <div class="h-full">
+            <Carousel>
+              <CarouselItem>
+                <iframe
+                  class="w-full h-full"
+                  src="https://www.youtube.com/embed/1Q-ZASEpHeI?si=2BspDC_boqL3fBAb"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  src="portfolio/cryo/Cryo1.png"
+                  alt="Screenshot of web application."
+                />
+              </CarouselItem>
+            </Carousel>
+          </div>
         </PortfolioBody>
       </PortfolioCard>
       <PortfolioCard>
         <Subheading>Pangea Resource Edit</Subheading>
         <PortfolioBody>
-          <div class="flex flex-col">
-            <div class="grid grid-cols-2 gap-4">
+          <div class="flex flex-col h-full">
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
               <WhiteLinkButton
                 text="Frontend"
                 link="https://github.com/LachlanBWWright/PangeaRSEdit"
-                ><GitHubLogo size={30} /></WhiteLinkButton
-              >
+              />
               <WhiteLinkButton
                 text="RSRCDump"
                 link="https://github.com/LachlanBWWright/rsrcdump"
-                ><GitHubLogo size={30} /></WhiteLinkButton
-              >
+              />
             </div>
             <li>
-              Developed a React-based level editor for the open-sourced 2001
-              video game “Otto Matic”.
+              Developed a React-based level editor for the open-sourced Pangea
+              Software games, notable for being bundled with Macintosh computers
+              in the late 90s and early 2000s, and later being ported as some of
+              the earlies iOS games.
             </li>
             <li>
               Forked and extended the Python “RSRCDump” library for editing MAC
@@ -90,37 +91,105 @@
               data
             </li>
           </div>
-          <Carousel>
-            <CarouselItem>
-              <img src="portfolio/pangea/Pangea1.png" alt="" />
-            </CarouselItem>
-            <CarouselItem>
-              <img src="portfolio/pangea/Pangea2.png" alt="" />
-            </CarouselItem>
-            <CarouselItem>
-              <img src="portfolio/pangea/Pangea3.png" alt="" />
-            </CarouselItem>
-            <CarouselItem>
-              <img src="portfolio/pangea/Pangea4.png" alt="" />
-            </CarouselItem>
-            <CarouselItem>
-              <img src="portfolio/pangea/Pangea5.png" alt="" />
-            </CarouselItem>
-            <CarouselItem>
-              <img src="portfolio/pangea/Pangea6.png" alt="" />
-            </CarouselItem>
-          </Carousel>
+          <div class="h-full">
+            <Carousel>
+              <CarouselItem>
+                <img src="portfolio/pangea/Pangea1.png" alt="" />
+              </CarouselItem>
+              <CarouselItem>
+                <img src="portfolio/pangea/Pangea2.png" alt="" />
+              </CarouselItem>
+              <CarouselItem>
+                <img src="portfolio/pangea/Pangea3.png" alt="" />
+              </CarouselItem>
+              <CarouselItem>
+                <img src="portfolio/pangea/Pangea4.png" alt="" />
+              </CarouselItem>
+              <CarouselItem>
+                <img src="portfolio/pangea/Pangea5.png" alt="" />
+              </CarouselItem>
+              <CarouselItem>
+                <img src="portfolio/pangea/Pangea6.png" alt="" />
+              </CarouselItem>
+            </Carousel>
+          </div>
+        </PortfolioBody>
+      </PortfolioCard>
+      <!-- Android Ports section added after Pangea Resource Edit -->
+      <PortfolioCard>
+        <Subheading>Android Ports</Subheading>
+        <PortfolioBody>
+          <div class="flex flex-col h-full">
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
+              <WhiteLinkButton
+                text="Otto Matic"
+                link="https://github.com/LachlanBWWright/OttoMatic-Android"
+              />
+              <WhiteLinkButton
+                text="Billy Frontier"
+                link="https://github.com/LachlanBWWright/BillyFrontier-Android"
+              />
+              <WhiteLinkButton
+                text="Bugdom"
+                link="https://github.com/LachlanBWWright/Bugdom-android"
+              />
+              <WhiteLinkButton
+                text="Bugdom 2"
+                link="https://github.com/LachlanBWWright/Bugdom2-Android"
+              />
+              <WhiteLinkButton
+                text="Cro-Mag Rally"
+                link="https://github.com/LachlanBWWright/CroMagRally-Android"
+              />
+              <WhiteLinkButton
+                text="Mighty Mike"
+                link="https://github.com/LachlanBWWright/MightyMike-Android"
+              />
+              <WhiteLinkButton
+                text="Nanosaur"
+                link="https://github.com/LachlanBWWright/Nanosaur-android"
+              />
+              <WhiteLinkButton
+                text="Nanosaur 2"
+                link="https://github.com/LachlanBWWright/Nanosaur2-Android"
+              />
+            </div>
+            <li>
+              A collection of games from Pangea Software ported to Android.
+            </li>
+          </div>
+          <div class="h-full">
+            <Carousel>
+              <CarouselItem>
+                <img src="portfolio/androidPorts/OttoMatic.jpg" alt="" />
+              </CarouselItem>
+              <CarouselItem>
+                <img src="portfolio/androidPorts/BillyFrontier.jpg" alt="" />
+              </CarouselItem>
+              <CarouselItem>
+                <img src="portfolio/androidPorts/Bugdom1.jpg" alt="" />
+              </CarouselItem>
+              <CarouselItem>
+                <img src="portfolio/androidPorts/Bugdom2.jpg" alt="" />
+              </CarouselItem>
+              <CarouselItem>
+                <img src="portfolio/androidPorts/Nanosaur1.jpg" alt="" />
+              </CarouselItem>
+              <CarouselItem>
+                <img src="portfolio/androidPorts/Nanosaur2.jpg" alt="" />
+              </CarouselItem>
+            </Carousel>
+          </div>
         </PortfolioBody>
       </PortfolioCard>
       <PortfolioCard>
         <Subheading>Online Exam System</Subheading>
         <PortfolioBody>
-          <div class="flex flex-col">
+          <div class="flex flex-col h-full">
             <WhiteLinkButton
               text="Repository"
               link="https://github.com/LachlanBWWright/T1-Online-Exam-System"
-              ><GitHubLogo size={30} /></WhiteLinkButton
-            >
+            />
             <li>
               Created a mock website for the online invigilation of exams.
             </li>
@@ -136,25 +205,26 @@
               a collaborative environment.
             </li>
           </div>
-          <Carousel>
-            <CarouselItem>
-              <img
-                src="portfolio/exam/Exam1.png"
-                alt="Screenshot of website."
-              />
-            </CarouselItem>
-          </Carousel>
+          <div class="h-full">
+            <Carousel>
+              <CarouselItem>
+                <img
+                  src="portfolio/exam/Exam1.png"
+                  alt="Screenshot of website."
+                />
+              </CarouselItem>
+            </Carousel>
+          </div>
         </PortfolioBody>
       </PortfolioCard>
       <PortfolioCard>
         <Subheading>Deal Scanner</Subheading>
         <PortfolioBody>
-          <div class="flex flex-col">
+          <div class="flex flex-col h-full">
             <WhiteLinkButton
               text="Repository"
               link="https://github.com/LachlanBWWright/LBWW-Deal-Scanner"
-              ><GitHubLogo size={30} /></WhiteLinkButton
-            >
+            />
             <li>
               Developed a NodeJS-based application written in TypeScript,
               utilising Puppeteer, Axios, and Mongoose NPM packages.
@@ -168,28 +238,27 @@
               to be automatically scanned periodically.
             </li>
           </div>
-          <Carousel>
-            <CarouselItem>
-              <img src="portfolio/deals/Deals1.png" alt="Screenshot of code." />
-            </CarouselItem>
-          </Carousel>
+          <div class="h-full">
+            <Carousel>
+              <CarouselItem>
+                <img
+                  src="portfolio/deals/Deals1.png"
+                  alt="Screenshot of code."
+                />
+              </CarouselItem>
+            </Carousel>
+          </div>
         </PortfolioBody>
       </PortfolioCard>
       <PortfolioCard>
-        <Subheading>MERN Mafia</Subheading>
+        <Subheading>LBWW Mafia</Subheading>
         <PortfolioBody>
-          <div class="flex flex-col">
-            <div class="grid grid-cols-2 gap-4">
+          <div class="flex flex-col h-full">
+            <div class="grid grid-cols-1 gap-4">
               <WhiteLinkButton
-                text="React DOM"
+                text="Repository"
                 link="https://github.com/LachlanBWWright/MERN-Mafia"
-                ><GitHubLogo size={30} /></WhiteLinkButton
-              >
-              <WhiteLinkButton
-                text="React Native"
-                link="https://github.com/LachlanBWWright/MERN-Mafia-Mobile"
-                ><GitHubLogo size={30} /></WhiteLinkButton
-              >
+              />
             </div>
             <li>
               Created an online chat-based game built with a MERN stack,
@@ -212,76 +281,79 @@
               Database using Mongoose.
             </li>
           </div>
-          <Carousel>
-            <CarouselItem>
-              <iframe
-                class="w-full h-full"
-                src="https://www.youtube.com/embed/odZuaUu2I3c?si=Pwt6HkQCBgARhmR5"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-            </CarouselItem>
-            <CarouselItem>
-              <img
-                src="portfolio/mafia/Mafia1.png"
-                alt="Screenshot of web application."
-              />
-            </CarouselItem>
-            <CarouselItem>
-              <img
-                src="portfolio/mafia/Mafia2.png"
-                alt="Screenshot of web application."
-              />
-            </CarouselItem>
-            <CarouselItem>
-              <img
-                src="portfolio/mafia/Mafia3.png"
-                alt="Screenshot of web application."
-              />
-            </CarouselItem>
-          </Carousel>
+          <div class="h-full">
+            <Carousel>
+              <CarouselItem>
+                <iframe
+                  class="w-full h-full"
+                  src="https://www.youtube.com/embed/odZuaUu2I3c?si=Pwt6HkQCBgARhmR5"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  src="portfolio/mafia/Mafia1.png"
+                  alt="Screenshot of web application."
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  src="portfolio/mafia/Mafia2.png"
+                  alt="Screenshot of web application."
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  src="portfolio/mafia/Mafia3.png"
+                  alt="Screenshot of web application."
+                />
+              </CarouselItem>
+            </Carousel>
+          </div>
         </PortfolioBody>
       </PortfolioCard>
       <PortfolioCard>
         <Subheading>Public Transport App</Subheading>
         <PortfolioBody>
-          <div class="flex flex-col">
+          <div class="flex flex-col h-full">
             <WhiteLinkButton
               text="Repository"
               link="https://github.com/LachlanBWWright/Flutter_Timetable"
-              ><GitHubLogo size={30} /></WhiteLinkButton
-            >
+            />
             <li>
               Developed a mobile application for viewing public transportation
               timetables in NSW.
             </li>
             <li>Developed interfaces with Transport for NSW’s OpenData API.</li>
           </div>
-          <Carousel>
-            <CarouselItem>
-              <img
-                class="max-h-96"
-                src="portfolio/timetable/Timetable1.png"
-                alt="Screenshot of application."
-              />
-            </CarouselItem>
-            <CarouselItem>
-              <img
-                class="max-h-96"
-                src="portfolio/timetable/Timetable2.png"
-                alt="Screenshot of application."
-              />
-            </CarouselItem>
-            <CarouselItem>
-              <img
-                class="max-h-96"
-                src="portfolio/timetable/Timetable3.png"
-                alt="Screenshot of application."
-              />
-            </CarouselItem>
-          </Carousel>
+          <div class="h-full">
+            <Carousel>
+              <CarouselItem>
+                <img
+                  class="max-h-96"
+                  src="portfolio/timetable/Timetable1.png"
+                  alt="Screenshot of application."
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  class="max-h-96"
+                  src="portfolio/timetable/Timetable2.png"
+                  alt="Screenshot of application."
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  class="max-h-96"
+                  src="portfolio/timetable/Timetable3.png"
+                  alt="Screenshot of application."
+                />
+              </CarouselItem>
+            </Carousel>
+          </div>
         </PortfolioBody>
       </PortfolioCard>
     </div>

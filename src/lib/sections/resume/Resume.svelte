@@ -1,6 +1,5 @@
 <script lang="ts">
   import DownloadButton from "$lib/buttons/DownloadButton.svelte";
-  import WhiteLinkButton from "$lib/buttons/WhiteLinkButton.svelte";
   import Heading from "$lib/headers/Heading.svelte";
   import Card from "$lib/cards/Card.svelte";
 </script>
@@ -17,8 +16,8 @@
       <DownloadButton
         text="Download PDF"
         link="/Resume.pdf"
-        downloadName="Lachlan Wright - Resume">💾</DownloadButton
-      >
+        downloadName="Lachlan Wright - Resume"
+      />
     </div>
   </Card>
 </div>

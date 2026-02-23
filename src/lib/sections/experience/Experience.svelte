@@ -14,7 +14,7 @@
 
     <div>
       <ListSectionHeader>
-        Full Stack Developer (Nov 2023 - Present)
+        Full Stack Developer (Nov 2023 - Feb 2026)
       </ListSectionHeader>
       <ListSectionSubHeader>Chaos1 - Sydney, NSW</ListSectionSubHeader>
     </div>

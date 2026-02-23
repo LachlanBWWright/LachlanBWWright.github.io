@@ -13,7 +13,9 @@
   class="bg-background min-h-screen text-white items-center flex flex-col pb-16 text-xl"
 >
   <Navbar />
-  <div class="flex max-w-[1300px] w-full px-2 sm:px-4 gap-8">
+  <div
+    class="flex flex-col xl:flex-row max-w-[1300px] w-full px-2 sm:px-4 gap-8"
+  >
     <div class="flex flex-col gap-40 flex-1">
       <Header />
 

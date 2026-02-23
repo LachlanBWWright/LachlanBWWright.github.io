@@ -36,3 +36,15 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+## Resume thumbnail
+
+A helper script generates a JPEG thumbnail from the first page of
+`static/Resume.pdf` and writes it to `static/resume-page-1.jpg` (overwriting
+any existing image).
+
+- run it with `npm run thumb` (requires `ts-node` via `npx`).
+- the script lives in `scripts/generateResumeThumbnail.ts`; you can also
+  convert it to shell/another language if you prefer.
+
+This keeps the thumbnail up-to-date whenever the PDF changes.
