@@ -75,7 +75,7 @@
               Developed a React-based level editor for the open-sourced Pangea
               Software games, notable for being bundled with Macintosh computers
               in the late 90s and early 2000s, and later being ported as some of
-              the earlies iOS games.
+              the earliest iOS games.
             </li>
             <li>
               Forked and extended the Python “RSRCDump” library for editing MAC
@@ -155,7 +155,8 @@
               />
             </div>
             <li>
-              A collection of games from Pangea Software ported to Android.
+              A collection of games from Pangea Software ported to Android using
+              asynchronous coding agents.
             </li>
           </div>
           <div class="h-full">
