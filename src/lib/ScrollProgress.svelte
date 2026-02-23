@@ -8,6 +8,17 @@
 
   let activeSectionProgress = $state(0);
 
+  // helper for scrolling to a section (mirrors Navbar behaviour)
+  function scrollToSection(target: string) {
+    const anchor = document.getElementById(target);
+    if (!anchor) return;
+    const navbarRef = document.getElementById("navbar");
+    window.scrollTo({
+      top: anchor.offsetTop - (navbarRef?.clientHeight ?? 32),
+      behavior: "smooth",
+    });
+  }
+
   function updateScrollProgress() {
     const scrollTop = window.scrollY;
     const docHeight =
@@ -69,7 +80,7 @@
   });
 </script>
 
-<div class="sticky top-1/2 transform -translate-y-1/2 self-start hidden sm:block">
+<div class="sticky top-1/2 transform -translate-y-1/2 self-start">
   <div class="flex flex-col items-center space-y-3">
     {#each sections as section, index}
       {@const isActive = index === activeSectionIndex}
@@ -77,8 +88,11 @@
       {@const height = isActive ? "h-16" : "h-8"}
       {@const width = isActive ? "w-2" : "w-1"}
 
-      <div
-        class="transition-all duration-500 ease-out {width} {height} rounded-full overflow-hidden relative"
+      <button
+        type="button"
+        aria-label={section}
+        onclick={() => scrollToSection(section)}
+        class="transition-all duration-500 ease-out {width} {height} rounded-full overflow-hidden relative cursor-pointer focus:outline-none"
       >
         {#if isActive}
           <!-- Active section: grey background with blue fill from top to bottom -->
@@ -94,9 +108,7 @@
           <!-- Not reached sections: grey -->
           <div class="w-full h-full bg-gray-500 rounded-full"></div>
         {/if}
-      </div>
+      </button>
     {/each}
   </div>
 </div>
-
-

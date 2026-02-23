@@ -97,8 +97,8 @@
 <nav
   id="navbar"
   class={scrolledToTop
-    ? "sticky top-0 flex flex-row items-center gap-6 px-3 py-1 w-full bg-transparent shadow-2xl text-white text-lg sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl justify-center h-4 sm:h-16 transition duration-500 z-10"
-    : "sticky top-0 flex flex-row items-center gap-6 px-3 py-1 w-full bg-primary shadow-2xl text-white text-lg sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl justify-center h-4 sm:h-16 transition duration-500 z-10"}
+    ? "hidden sm:flex sticky top-0 flex-row items-center gap-6 px-3 py-1 w-full bg-background shadow-none text-white text-lg sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl justify-center h-4 sm:h-16 transition duration-500 z-10"
+    : "hidden sm:flex sticky top-0 flex-row items-center gap-6 px-3 py-1 w-full bg-primary shadow-2xl text-white text-lg sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl justify-center h-4 sm:h-16 transition duration-500 z-10"}
 >
   <!-- mobile dropdown removed: show only centered thin progress bars on smallest breakpoint -->
   <button

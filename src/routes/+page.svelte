@@ -13,10 +13,8 @@
   class="bg-background min-h-screen text-white items-center flex flex-col pb-16 text-xl"
 >
   <Navbar />
-  <div
-    class="flex flex-col xl:flex-row max-w-[1300px] w-full px-2 sm:px-4 gap-8"
-  >
-    <div class="flex flex-col gap-40 flex-1">
+  <div class="flex flex-row max-w-[1300px] w-full px-2 sm:px-4 gap-3">
+    <div class="flex-1 flex flex-col gap-40">
       <Header />
 
       <Competencies />
@@ -30,6 +28,9 @@
       <AcademicRecord />
       <div class="pb-100"></div>
     </div>
-    <ScrollProgress />
+    <!-- sidebar column: fixed width, prevents overlap -->
+    <div class="w-4 flex-none flex justify-center">
+      <ScrollProgress />
+    </div>
   </div>
 </div>
