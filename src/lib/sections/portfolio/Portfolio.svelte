@@ -37,23 +37,23 @@
           </div>
           <div class="h-full">
             <Carousel>
-            <CarouselItem>
-              <iframe
-                class="w-full h-full"
-                src="https://www.youtube.com/embed/1Q-ZASEpHeI?si=2BspDC_boqL3fBAb"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-            </CarouselItem>
-            <CarouselItem>
-              <img
-                src="portfolio/cryo/Cryo1.png"
-                alt="Screenshot of web application."
-              />
-            </CarouselItem>
-          </Carousel>
+              <CarouselItem>
+                <iframe
+                  class="w-full h-full"
+                  src="https://www.youtube.com/embed/1Q-ZASEpHeI?si=2BspDC_boqL3fBAb"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  src="portfolio/cryo/Cryo1.png"
+                  alt="Screenshot of web application."
+                />
+              </CarouselItem>
+            </Carousel>
           </div>
         </PortfolioBody>
       </PortfolioCard>
@@ -93,25 +93,25 @@
           </div>
           <div class="h-full">
             <Carousel>
-            <CarouselItem>
-              <img src="portfolio/pangea/Pangea1.png" alt="" />
-            </CarouselItem>
-            <CarouselItem>
-              <img src="portfolio/pangea/Pangea2.png" alt="" />
-            </CarouselItem>
-            <CarouselItem>
-              <img src="portfolio/pangea/Pangea3.png" alt="" />
-            </CarouselItem>
-            <CarouselItem>
-              <img src="portfolio/pangea/Pangea4.png" alt="" />
-            </CarouselItem>
-            <CarouselItem>
-              <img src="portfolio/pangea/Pangea5.png" alt="" />
-            </CarouselItem>
-            <CarouselItem>
-              <img src="portfolio/pangea/Pangea6.png" alt="" />
-            </CarouselItem>
-          </Carousel>
+              <CarouselItem>
+                <img src="portfolio/pangea/Pangea1.png" alt="" />
+              </CarouselItem>
+              <CarouselItem>
+                <img src="portfolio/pangea/Pangea2.png" alt="" />
+              </CarouselItem>
+              <CarouselItem>
+                <img src="portfolio/pangea/Pangea3.png" alt="" />
+              </CarouselItem>
+              <CarouselItem>
+                <img src="portfolio/pangea/Pangea4.png" alt="" />
+              </CarouselItem>
+              <CarouselItem>
+                <img src="portfolio/pangea/Pangea5.png" alt="" />
+              </CarouselItem>
+              <CarouselItem>
+                <img src="portfolio/pangea/Pangea6.png" alt="" />
+              </CarouselItem>
+            </Carousel>
           </div>
         </PortfolioBody>
       </PortfolioCard>
@@ -160,25 +160,25 @@
           </div>
           <div class="h-full">
             <Carousel>
-            <CarouselItem>
-              <img src="portfolio/androidPorts/OttoMatic.jpg" alt="" />
-            </CarouselItem>
-            <CarouselItem>
-              <img src="portfolio/androidPorts/BillyFrontier.jpg" alt="" />
-            </CarouselItem>
-            <CarouselItem>
-              <img src="portfolio/androidPorts/Bugdom1.jpg" alt="" />
-            </CarouselItem>
-            <CarouselItem>
-              <img src="portfolio/androidPorts/Bugdom2.jpg" alt="" />
-            </CarouselItem>
-            <CarouselItem>
-              <img src="portfolio/androidPorts/Nanosaur1.jpg" alt="" />
-            </CarouselItem>
-            <CarouselItem>
-              <img src="portfolio/androidPorts/Nanosaur2.jpg" alt="" />
-            </CarouselItem>
-          </Carousel>
+              <CarouselItem>
+                <img src="portfolio/androidPorts/OttoMatic.jpg" alt="" />
+              </CarouselItem>
+              <CarouselItem>
+                <img src="portfolio/androidPorts/BillyFrontier.jpg" alt="" />
+              </CarouselItem>
+              <CarouselItem>
+                <img src="portfolio/androidPorts/Bugdom1.jpg" alt="" />
+              </CarouselItem>
+              <CarouselItem>
+                <img src="portfolio/androidPorts/Bugdom2.jpg" alt="" />
+              </CarouselItem>
+              <CarouselItem>
+                <img src="portfolio/androidPorts/Nanosaur1.jpg" alt="" />
+              </CarouselItem>
+              <CarouselItem>
+                <img src="portfolio/androidPorts/Nanosaur2.jpg" alt="" />
+              </CarouselItem>
+            </Carousel>
           </div>
         </PortfolioBody>
       </PortfolioCard>
@@ -207,13 +207,13 @@
           </div>
           <div class="h-full">
             <Carousel>
-            <CarouselItem>
-              <img
-                src="portfolio/exam/Exam1.png"
-                alt="Screenshot of website."
-              />
-            </CarouselItem>
-          </Carousel>
+              <CarouselItem>
+                <img
+                  src="portfolio/exam/Exam1.png"
+                  alt="Screenshot of website."
+                />
+              </CarouselItem>
+            </Carousel>
           </div>
         </PortfolioBody>
       </PortfolioCard>
@@ -240,10 +240,13 @@
           </div>
           <div class="h-full">
             <Carousel>
-            <CarouselItem>
-              <img src="portfolio/deals/Deals1.png" alt="Screenshot of code." />
-            </CarouselItem>
-          </Carousel>
+              <CarouselItem>
+                <img
+                  src="portfolio/deals/Deals1.png"
+                  alt="Screenshot of code."
+                />
+              </CarouselItem>
+            </Carousel>
           </div>
         </PortfolioBody>
       </PortfolioCard>
@@ -280,35 +283,35 @@
           </div>
           <div class="h-full">
             <Carousel>
-            <CarouselItem>
-              <iframe
-                class="w-full h-full"
-                src="https://www.youtube.com/embed/odZuaUu2I3c?si=Pwt6HkQCBgARhmR5"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-            </CarouselItem>
-            <CarouselItem>
-              <img
-                src="portfolio/mafia/Mafia1.png"
-                alt="Screenshot of web application."
-              />
-            </CarouselItem>
-            <CarouselItem>
-              <img
-                src="portfolio/mafia/Mafia2.png"
-                alt="Screenshot of web application."
-              />
-            </CarouselItem>
-            <CarouselItem>
-              <img
-                src="portfolio/mafia/Mafia3.png"
-                alt="Screenshot of web application."
-              />
-            </CarouselItem>
-          </Carousel>
+              <CarouselItem>
+                <iframe
+                  class="w-full h-full"
+                  src="https://www.youtube.com/embed/odZuaUu2I3c?si=Pwt6HkQCBgARhmR5"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  src="portfolio/mafia/Mafia1.png"
+                  alt="Screenshot of web application."
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  src="portfolio/mafia/Mafia2.png"
+                  alt="Screenshot of web application."
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  src="portfolio/mafia/Mafia3.png"
+                  alt="Screenshot of web application."
+                />
+              </CarouselItem>
+            </Carousel>
           </div>
         </PortfolioBody>
       </PortfolioCard>
@@ -328,28 +331,28 @@
           </div>
           <div class="h-full">
             <Carousel>
-            <CarouselItem>
-              <img
-                class="max-h-96"
-                src="portfolio/timetable/Timetable1.png"
-                alt="Screenshot of application."
-              />
-            </CarouselItem>
-            <CarouselItem>
-              <img
-                class="max-h-96"
-                src="portfolio/timetable/Timetable2.png"
-                alt="Screenshot of application."
-              />
-            </CarouselItem>
-            <CarouselItem>
-              <img
-                class="max-h-96"
-                src="portfolio/timetable/Timetable3.png"
-                alt="Screenshot of application."
-              />
-            </CarouselItem>
-          </Carousel>
+              <CarouselItem>
+                <img
+                  class="max-h-96"
+                  src="portfolio/timetable/Timetable1.png"
+                  alt="Screenshot of application."
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  class="max-h-96"
+                  src="portfolio/timetable/Timetable2.png"
+                  alt="Screenshot of application."
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  class="max-h-96"
+                  src="portfolio/timetable/Timetable3.png"
+                  alt="Screenshot of application."
+                />
+              </CarouselItem>
+            </Carousel>
           </div>
         </PortfolioBody>
       </PortfolioCard>

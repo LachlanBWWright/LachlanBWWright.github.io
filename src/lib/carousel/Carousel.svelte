@@ -12,7 +12,7 @@
   <!-- ensure Splide itself stretches to fill grid cell height -->
   <Splide
     class="h-full"
-    options={{ rewind: true, height: '100%', autoHeight: false }}
+    options={{ rewind: true, height: "100%", autoHeight: false }}
   >
     {@render children?.()}
   </Splide>

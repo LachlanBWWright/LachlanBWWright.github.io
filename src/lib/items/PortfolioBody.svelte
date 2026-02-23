@@ -1,9 +1,11 @@
 <script lang="ts">
-	interface Props {
-		children?: import('svelte').Snippet;
-	}
+  interface Props {
+    children?: import("svelte").Snippet;
+  }
 
-	let { children }: Props = $props();
+  let { children }: Props = $props();
 </script>
 
-<div class="grid gap-4 grid-cols-1 xl:grid-cols-2 items-stretch">{@render children?.()}</div>
+<div class="grid gap-4 grid-cols-1 xl:grid-cols-2 items-stretch">
+  {@render children?.()}
+</div>
