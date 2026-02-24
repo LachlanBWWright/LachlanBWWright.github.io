@@ -19,19 +19,33 @@
       <ListSectionSubHeader>Chaos1 - Sydney, NSW</ListSectionSubHeader>
     </div>
     <BaseList>
-      <li>Developed a website utilising ReactJS a MERN stack.</li>
       <li>
-        Used Jotai, Immer, and Tanstack Query (React Query) libraries for state
-        management.
+        Developed a NextJS website in a team of 6 interns, before being hired
+        for continued development.
       </li>
       <li>
-        Used TailwindCSS for styling, and Quill for text-input functionality.
+        Utilised TailwindCSS and ShadCN components for efficient development and
+        consistent interfaces.
       </li>
-      <li>Continued development from an existing codebase.</li>
-      <li>Provided mentoring and feedback for team members.</li>
       <li>
-        Implemented a testing suite using end-to-end with Cypress, automatically
-        run before integration using GitHub Actions.
+        Contributed to a text editor utilising TipTap’s editor, and its live
+        synchronisation with HocusPocus.
+      </li>
+      <li>
+        Provided team members with technical mentoring, guidance, and code
+        reviews.
+      </li>
+      <li>
+        Implemented an end-to-end testing suite executed using Cypress and
+        GitHub Actions.
+      </li>
+      <li>
+        Developed an additional Flutter application with a Spring backend
+        utilising Hibernate.
+      </li>
+      <li>
+        Managed Google Cloud Platform services, including Cloud Build, Cloud
+        Run, and Cloud SQL.
       </li>
     </BaseList>
 

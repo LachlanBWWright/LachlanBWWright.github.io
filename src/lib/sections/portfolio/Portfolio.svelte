@@ -261,7 +261,7 @@
             <div class="grid grid-cols-1 gap-4">
               <WhiteLinkButton
                 text="Repository"
-                link="https://github.com/LachlanBWWright/MERN-Mafia"
+                link="https://github.com/LachlanBWWright/LBWW-Mafia"
               />
             </div>
             <li>
@@ -269,7 +269,7 @@
               alongside a React Native app as an alternate frontend.
             </li>
             <li>
-              Used JavaScript and Bootstrap to construct the MERN Stack, and
+              Used TypeScript and Bootstrap to construct the MERN Stack, and
               TypeScript to construct the React Native application.
             </li>
             <li>
