@@ -10,7 +10,7 @@
 </script>
 
 <div
-  class="bg-background min-h-screen text-white items-center flex flex-col pb-16 text-xl"
+  class="bg-background min-h-screen text-white items-center flex flex-col pb-16 text-lg"
 >
   <Navbar />
   <div class="flex flex-row max-w-[1300px] w-full px-2 sm:px-4 gap-3">
@@ -26,7 +26,6 @@
       <Resume />
 
       <AcademicRecord />
-      <div class="pb-100"></div>
     </div>
     <!-- sidebar column: fixed width, prevents overlap -->
     <div class="w-4 flex-none flex justify-center">

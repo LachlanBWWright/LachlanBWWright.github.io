@@ -7,7 +7,7 @@
 </script>
 
 <p
-  class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-center pb-2 text-white"
+  class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center pb-2 text-white"
 >
   {@render children?.()}
 </p>

@@ -11,9 +11,9 @@
     "font-bold transition-all  hidden sm:block underline duration-200 transition";
   //Buttons that appear on mobile view (May be hidden by virtue of a hidden parent on desktop)
   let mobileUnselectedButton =
-    "text-2xl hover:font-bold transition-all duration-200 transition";
+    "text-xl hover:font-bold transition-all duration-200 transition";
   let mobileSelectedButton =
-    "text-2xl font-bold transition-all underline duration-200 transition";
+    "text-xl font-bold transition-all underline duration-200 transition";
   let currentPosition = $state("header"); //The current position of the page, used to determine which button should be highlighted
 
   // Progress state (for mobile thin bars)
@@ -97,8 +97,8 @@
 <nav
   id="navbar"
   class={scrolledToTop
-    ? "hidden sm:flex sticky top-0 flex-row items-center gap-6 px-3 py-1 w-full bg-background shadow-none text-white text-lg sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl justify-center h-4 sm:h-16 transition duration-500 z-10"
-    : "hidden sm:flex sticky top-0 flex-row items-center gap-6 px-3 py-1 w-full bg-primary shadow-2xl text-white text-lg sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl justify-center h-4 sm:h-16 transition duration-500 z-10"}
+    ? "hidden sm:flex sticky top-0 flex-row items-center gap-6 px-3 py-1 w-full bg-background shadow-none text-white text-base sm:text-base md:text-xl lg:text-2xl xl:text-3xl justify-center h-4 sm:h-16 transition duration-500 z-10"
+    : "hidden sm:flex sticky top-0 flex-row items-center gap-6 px-3 py-1 w-full bg-primary shadow-2xl text-white text-base sm:text-base md:text-xl lg:text-2xl xl:text-3xl justify-center h-4 sm:h-16 transition duration-500 z-10"}
 >
   <!-- mobile dropdown removed: show only centered thin progress bars on smallest breakpoint -->
   <button

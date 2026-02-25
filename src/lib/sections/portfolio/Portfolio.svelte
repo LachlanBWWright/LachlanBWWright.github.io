@@ -109,7 +109,7 @@
             <Thumbnails
               images={cryoImages}
               bind:index={cryoIndex}
-              class="mt-4 gap-3 bg-transparent h-[60px] overflow-x-auto overflow-y-hidden"
+              class="mt-4 gap-3 bg-transparent h-[68px] py-1 overflow-x-auto overflow-y-hidden"
             >
               {#snippet children({ image, selected, Thumbnail }: { image: SlideImage; selected: boolean; Thumbnail: any })}
                 {#if image.iframe}
@@ -155,7 +155,7 @@
             <Thumbnails
               images={pangeaImages}
               bind:index={pangeaIndex}
-              class="mt-4 gap-3 bg-transparent h-[60px] overflow-x-auto overflow-y-hidden"
+              class="mt-4 gap-3 bg-transparent h-[68px] py-1 overflow-x-auto overflow-y-hidden"
             >
               {#snippet children({ image, selected, Thumbnail })}
                 <Thumbnail
@@ -196,7 +196,7 @@
             <Thumbnails
               images={androidImages}
               bind:index={androidIndex}
-              class="mt-4 gap-3 bg-transparent h-[60px] overflow-x-auto overflow-y-hidden"
+              class="mt-4 gap-3 bg-transparent h-[68px] py-1 overflow-x-auto overflow-y-hidden"
             >
               {#snippet children({ image, selected, Thumbnail })}
                 <Thumbnail
@@ -231,7 +231,7 @@
             <Thumbnails
               images={examImages}
               bind:index={examIndex}
-              class="mt-4 gap-3 bg-transparent h-[60px] overflow-x-auto overflow-y-hidden"
+              class="mt-4 gap-3 bg-transparent h-[68px] py-1 overflow-x-auto overflow-y-hidden"
             >
               {#snippet children({ image, selected, Thumbnail })}
                 <Thumbnail
@@ -265,7 +265,7 @@
             <Thumbnails
               images={dealsImages}
               bind:index={dealsIndex}
-              class="mt-4 gap-3 bg-transparent h-[60px] overflow-x-auto overflow-y-hidden"
+              class="mt-4 gap-3 bg-transparent h-[68px] py-1 overflow-x-auto overflow-y-hidden"
             >
               {#snippet children({ image, selected, Thumbnail })}
                 <Thumbnail
@@ -312,7 +312,7 @@
             <Thumbnails
               images={mafiaImages}
               bind:index={mafiaIndex}
-              class="mt-4 gap-3 bg-transparent h-[60px] overflow-x-auto overflow-y-hidden"
+              class="mt-4 gap-3 bg-transparent h-[68px] py-1 overflow-x-auto overflow-y-hidden"
             >
               {#snippet children({ image, selected, Thumbnail }: { image: SlideImage; selected: boolean; Thumbnail: any })}
                 {#if image.iframe}
@@ -357,7 +357,7 @@
             <Thumbnails
               images={timetableImages}
               bind:index={timetableIndex}
-              class="mt-4 gap-3 bg-transparent h-[60px] overflow-x-auto overflow-y-hidden"
+              class="mt-4 gap-3 bg-transparent h-[68px] py-1 overflow-x-auto overflow-y-hidden"
             >
               {#snippet children({ image, selected, Thumbnail })}
                 <Thumbnail

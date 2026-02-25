@@ -4,12 +4,12 @@
 
 <div id="header" class="flex flex-col p-2 text-center items-center gap-2">
   <p
-    class="text-3xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-9xl font-bold text-white"
+    class="text-2xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl font-bold text-white"
   >
     Lachlan Wright
   </p>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 w-full sm:w-fit">
+  <div class="grid grid-cols-1 sm:grid-cols-2 w-full sm:w-fit gap-2">
     <WhiteLinkButton
       link="https://www.github.com/LachlanBWWright"
       text="GitHub"
