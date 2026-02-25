@@ -1,4 +1,9 @@
 @import "tailwindcss";
+@source "../node_modules/flowbite-svelte/dist";
+
+* {
+  font-family: 'DM Sans', sans-serif;
+}
 
 @theme {
   /* Ocean Depths variables */

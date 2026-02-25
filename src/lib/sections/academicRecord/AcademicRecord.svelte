@@ -1,8 +1,26 @@
-<script>
+<script lang="ts">
   import Heading from "$lib/headers/Heading.svelte";
   import Card from "$lib/cards/Card.svelte";
   import WhiteLinkButton from "$lib/buttons/WhiteLinkButton.svelte";
   import Subheading from "$lib/headers/Subheading.svelte";
+  import { Carousel, Slide, Controls, Thumbnails } from "flowbite-svelte";
+
+  const transcriptImages = [
+    {
+      src: "/academicRecord/AcademicRecord_page-0001.jpg",
+      alt: "Academic transcript page 1",
+    },
+    {
+      src: "/academicRecord/AcademicRecord_page-0002.jpg",
+      alt: "Academic transcript page 2",
+    },
+    {
+      src: "/academicRecord/AcademicRecord_page-0003.jpg",
+      alt: "Academic transcript page 3",
+    },
+  ];
+
+  let transcriptIndex = $state(0);
 </script>
 
 <div id="academic-record" class="flex flex-col gap-3">
@@ -31,7 +49,7 @@
             <td class="py-1 pl-4 text-right">85.97%</td>
           </tr>
           <tr>
-            <td colspan="2" class="font-bold text-xl text-white pb-2"
+            <td colspan="2" class="font-bold text-xl text-white pb-2 pt-4"
               >Subject Highlights</td
             >
           </tr>
@@ -82,6 +100,35 @@
           </tr>
         </tbody>
       </table>
+      <div class="flex flex-col w-full">
+        <div class="transcript-carousel">
+          <Carousel
+            images={transcriptImages}
+            duration={0}
+            bind:index={transcriptIndex}
+          >
+            {#snippet slide({ index, Slide })}
+              <Slide image={transcriptImages[index]} fit="contain" />
+            {/snippet}
+            <Controls />
+          </Carousel>
+        </div>
+        <Thumbnails
+          images={transcriptImages}
+          bind:index={transcriptIndex}
+          class="mt-4 gap-3 bg-transparent h-[130px] py-1 overflow-x-auto overflow-y-hidden"
+        >
+          {#snippet children({ image, selected, Thumbnail })}
+            <Thumbnail
+              {selected}
+              {...image}
+              class="h-full w-[100px] object-cover flex-none rounded-md shadow-xl {selected
+                ? 'ring-2 ring-blue-500'
+                : ''}"
+            />
+          {/snippet}
+        </Thumbnails>
+      </div>
       <WhiteLinkButton
         link="/AcademicRecord.pdf"
         text="Download Academic Transcript"
@@ -89,3 +136,9 @@
     </div>
   </Card>
 </div>
+
+<style>
+  .transcript-carousel :global(.grid) {
+    height: 1000px;
+  }
+</style>

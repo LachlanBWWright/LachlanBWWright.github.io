@@ -137,6 +137,9 @@
         <PortfolioBody>
           <div class="flex flex-col gap-2">
             <div class="grid grid-cols-1 xl:grid-cols-2 gap-2">
+              <div class="xl:col-span-2">
+                <WhiteLinkButton text="Website" link="https://lachlanbwwright.github.io/PangeaRSEdit/" />
+              </div>
               <WhiteLinkButton text="Frontend" link="https://github.com/LachlanBWWright/PangeaRSEdit" />
               <WhiteLinkButton text="RSRCDump" link="https://github.com/LachlanBWWright/rsrcdump" />
             </div>
