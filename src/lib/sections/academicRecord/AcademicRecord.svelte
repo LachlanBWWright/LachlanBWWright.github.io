@@ -7,16 +7,24 @@
 
   const transcriptImages = [
     {
-      src: "/academicRecord/AcademicRecord_page-0001.jpg",
-      alt: "Academic transcript page 1",
+      src: "/academicRecord/Transcript_page-0001.jpg",
+      alt: "Transcript page 1",
     },
     {
-      src: "/academicRecord/AcademicRecord_page-0002.jpg",
-      alt: "Academic transcript page 2",
+      src: "/academicRecord/Transcript_page-0002.jpg",
+      alt: "Transcript page 2",
     },
     {
-      src: "/academicRecord/AcademicRecord_page-0003.jpg",
-      alt: "Academic transcript page 3",
+      src: "/academicRecord/Transcript_page-0003.jpg",
+      alt: "Transcript page 3",
+    },
+    {
+      src: "/academicRecord/Transcript_page-0004.jpg",
+      alt: "Transcript page 4",
+    },
+    {
+      src: "/academicRecord/Transcript_page-0005.jpg",
+      alt: "Transcript page 5",
     },
   ];
 
@@ -129,10 +137,16 @@
           {/snippet}
         </Thumbnails>
       </div>
-      <WhiteLinkButton
-        link="/AcademicRecord.pdf"
-        text="Download Academic Transcript"
-      />
+      <div class="flex flex-col sm:flex-row sm:items-center w-full gap-3 mt-4">
+        <WhiteLinkButton
+          link="https://www.myequals.net/sharelink/52d0c82d-0fd7-42f3-b731-a812c53474bb/33d1cd47-f984-40ca-9652-5e5054981b1d"
+          text="View Transcript"
+        />
+        <WhiteLinkButton
+          link="https://www.myequals.net/sharelink/downloaddoc/52d0c82d-0fd7-42f3-b731-a812c53474bb/33d1cd47-f984-40ca-9652-5e5054981b1d"
+          text="Download Transcript"
+        />
+      </div>
     </div>
   </Card>
 </div>
