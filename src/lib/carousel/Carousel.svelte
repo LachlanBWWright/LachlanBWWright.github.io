@@ -25,6 +25,9 @@
   :global(.splide__track),
   :global(.splide__list),
   :global(.splide__slide) {
-    height: 100% !important;
+    height: 100%;
+  }
+  :global(.splide__arrow) {
+    opacity: 0.9;
   }
 </style>

@@ -95,8 +95,8 @@
         class="transition-all duration-500 ease-out {width} {height} rounded-full overflow-hidden relative cursor-pointer focus:outline-none"
       >
         {#if isActive}
-          <!-- Active section: grey background with blue fill from top to bottom -->
-          <div class="w-full h-full bg-gray-500 rounded-full"></div>
+          <!-- Active section: white background with blue fill from top to bottom -->
+          <div class="w-full h-full bg-white rounded-full"></div>
           <div
             class="absolute top-0 w-full bg-primary rounded-t-full transition-all duration-300 ease-out"
             style="height: {activeSectionProgress}%; border-radius: 0 0 9999px 9999px;"
@@ -105,8 +105,8 @@
           <!-- Completed sections: fully filled -->
           <div class="w-full h-full bg-primary rounded-full"></div>
         {:else}
-          <!-- Not reached sections: grey -->
-          <div class="w-full h-full bg-gray-500 rounded-full"></div>
+          <!-- Not reached sections: white -->
+          <div class="w-full h-full bg-white rounded-full"></div>
         {/if}
       </button>
     {/each}
