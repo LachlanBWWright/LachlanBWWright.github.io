@@ -6,6 +6,6 @@
   let { children }: Props = $props();
 </script>
 
-<div class="grid gap-4 grid-cols-1 xl:grid-cols-2 items-stretch">
+<div class="grid gap-2 grid-cols-1 xl:grid-cols-2 items-stretch">
   {@render children?.()}
 </div>
