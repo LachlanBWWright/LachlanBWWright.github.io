@@ -2,7 +2,7 @@
   import WhiteLinkButton from "$lib/buttons/WhiteLinkButton.svelte";
 </script>
 
-<div id="header" class="flex flex-col p-2 text-center items-center gap-2">
+<div id="header" class="flex flex-col text-center items-center gap-2">
   <p
     class="text-2xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl font-bold text-white"
   >
@@ -19,7 +19,7 @@
       text="LinkedIn"
     />
   </div>
-  <div class="py-5 px-2 sm:px-10 md:px-15 lg:px-20">
+  <div>
     <p class="text-justify">
       I am an aspiring software developer, with a lifelong fascination with
       technology. While passionate about all aspects of software development and

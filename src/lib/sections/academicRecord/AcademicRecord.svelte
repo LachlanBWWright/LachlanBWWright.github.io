@@ -1,9 +1,9 @@
 <script lang="ts">
   import Heading from "$lib/headers/Heading.svelte";
-  import Card from "$lib/cards/Card.svelte";
   import WhiteLinkButton from "$lib/buttons/WhiteLinkButton.svelte";
   import Subheading from "$lib/headers/Subheading.svelte";
   import { Carousel, Slide, Controls, Thumbnails } from "flowbite-svelte";
+  import Card from "$lib/cards/Card.svelte";
 
   const transcriptImages = [
     {
@@ -33,8 +33,7 @@
 
 <div id="academic-record" class="flex flex-col gap-3">
   <Heading>Academic Record</Heading>
-  <Card>
-    <div class="flex flex-col gap-1 items-start">
+  <div class="flex flex-col gap-1 items-start">
       <div class="w-full text-center text-xl pb-2">
         <Subheading>Bachelor of Engineering (Software, Honours)</Subheading>
       </div>
@@ -108,6 +107,7 @@
           </tr>
         </tbody>
       </table>
+      <Card>
       <div class="flex flex-col w-full">
         <div class="transcript-carousel">
           <Carousel
@@ -137,6 +137,7 @@
           {/snippet}
         </Thumbnails>
       </div>
+      </Card>
       <div class="flex flex-col sm:flex-row sm:items-center w-full gap-3 mt-4">
         <WhiteLinkButton
           link="https://www.myequals.net/sharelink/52d0c82d-0fd7-42f3-b731-a812c53474bb/33d1cd47-f984-40ca-9652-5e5054981b1d"
@@ -148,11 +149,10 @@
         />
       </div>
     </div>
-  </Card>
 </div>
 
 <style>
   .transcript-carousel :global(.grid) {
-    height: 1000px;
+    height: clamp(400px, 130vw, 1000px);
   }
 </style>

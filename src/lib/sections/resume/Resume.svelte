@@ -7,11 +7,11 @@
 <div id="resume" class="flex flex-col gap-2 items-center">
   <Heading>Resume</Heading>
   <Card>
-    <div class="grid p-1 grid-cols-1 gap-1">
+    <div class="grid grid-cols-1 gap-4">
       <img
         src="/Resume-Page-1.jpg"
         alt="Resume Page 1"
-        class="w-full h-auto max-h-[500px] object-contain"
+        class="w-full h-auto max-h-[1000px] object-contain"
       />
       <DownloadButton
         text="Download PDF"

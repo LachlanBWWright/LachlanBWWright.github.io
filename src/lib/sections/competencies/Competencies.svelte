@@ -1,7 +1,6 @@
 <script lang="ts">
   import Heading from "$lib/headers/Heading.svelte";
   import Subheading from "$lib/headers/Subheading.svelte";
-  import Card from "$lib/cards/Card.svelte";
   import TechGrid from "./TechGrid.svelte";
   import {
     siTypescript,
@@ -108,8 +107,7 @@
 
 <div id="competencies" class="flex flex-col gap-1">
   <Heading>Competencies</Heading>
-  <Card>
-    <Subheading>Languages</Subheading>
+  <Subheading>Languages</Subheading>
     <TechGrid items={languages} />
 
     <br />
@@ -131,5 +129,4 @@
 
     <Subheading>Testing, Integration & Tools</Subheading>
     <TechGrid items={tooling} />
-  </Card>
 </div>

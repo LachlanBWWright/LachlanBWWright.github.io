@@ -4,13 +4,11 @@
   import ListSectionHeader from "$lib/lists/ListSectionHeader.svelte";
   import ListSectionSubHeader from "$lib/lists/ListSectionSubHeader.svelte";
   import BaseList from "$lib/lists/BaseList.svelte";
-  import Card from "$lib/cards/Card.svelte";
 </script>
 
 <div id="experience" class="flex flex-col gap-1">
   <Heading>Experience</Heading>
-  <Card>
-    <Subheading>Employment</Subheading>
+  <Subheading>Employment</Subheading>
 
     <div>
       <ListSectionHeader>
@@ -85,5 +83,4 @@
         services are provided with Microsoft Azure.
       </li>
     </BaseList>
-  </Card>
 </div>

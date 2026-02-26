@@ -12,7 +12,7 @@
   let { items }: Props = $props();
 </script>
 
-<div class="grid grid-cols-4 lg:grid-cols-6 gap-3 mt-2">
+<div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 mt-2">
   {#each items as item}
     <div class="relative aspect-square flex flex-col items-center justify-center gap-3 bg-gray-800 dark:bg-gray-700 rounded-lg group">
       <div class="w-16 h-16 [&>svg]:w-16 [&>svg]:h-16 [&>svg]:fill-white">

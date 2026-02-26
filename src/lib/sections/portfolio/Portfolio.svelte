@@ -5,11 +5,11 @@
   // use Flowbite Svelte carousel component
   import { Carousel, Slide, Controls, Thumbnails } from "flowbite-svelte";
   import WhiteLinkButton from "$lib/buttons/WhiteLinkButton.svelte";
-  import Card from "$lib/cards/Card.svelte";
   import Heading from "$lib/headers/Heading.svelte";
   import Subheading from "$lib/headers/Subheading.svelte";
 
   import type { HTMLImgAttributes } from "svelte/elements";
+  import Card from "$lib/cards/Card.svelte";
 
   type SlideImage = Partial<HTMLImgAttributes> & {
     iframe?: boolean;
@@ -75,8 +75,7 @@
 
 <div id="portfolio" class="flex flex-col gap-2">
   <Heading>Portfolio</Heading>
-  <Card>
-    <div class="grid grid-cols-1 gap-6">
+  <div class="grid grid-cols-1 gap-6">
 
       <!-- Cryogenic Wiring Simulation -->
       <PortfolioCard>
@@ -88,6 +87,7 @@
             <li>Utilised the Python-based Flask for hosting, allowing for interactions with the model over a REST API.</li>
             <li>Utilised the Recharts library for React to visually depict the model's outputs.</li>
           </div>
+          <Card>
           <div class="flex flex-col">
             <Carousel images={cryoImages} duration={0} class="h-64" bind:index={cryoIndex}>
               {#snippet slide({ index, Slide })}
@@ -128,6 +128,7 @@
               {/snippet}
             </Thumbnails>
           </div>
+          </Card>
         </PortfolioBody>
       </PortfolioCard>
 
@@ -148,6 +149,7 @@
             <li>Used Pyodide with the forked library to convert level files to JSON and back after modification.</li>
             <li>Used Konva to create a drag-and-drop interface for editing level data</li>
           </div>
+          <Card>
           <div class="flex flex-col">
             <Carousel images={pangeaImages} duration={0} class="h-64" bind:index={pangeaIndex}>
               {#snippet slide({ index, Slide })}
@@ -169,6 +171,7 @@
               {/snippet}
             </Thumbnails>
           </div>
+          </Card>
         </PortfolioBody>
       </PortfolioCard>
 
@@ -189,6 +192,7 @@
             </div>
             <li>A collection of games from Pangea Software ported to Android using asynchronous coding agents.</li>
           </div>
+          <Card>
           <div class="flex flex-col">
             <Carousel images={androidImages} duration={0} class="h-64" bind:index={androidIndex}>
               {#snippet slide({ index, Slide })}
@@ -210,6 +214,7 @@
               {/snippet}
             </Thumbnails>
           </div>
+          </Card>
         </PortfolioBody>
       </PortfolioCard>
 
@@ -224,6 +229,7 @@
             <li>Made comprehensive contributions across the entire technological stack.</li>
             <li>Provided advice, feedback, guidance, and performed code reviews in a collaborative environment.</li>
           </div>
+          <Card>
           <div class="flex flex-col">
             <Carousel images={examImages} duration={0} class="h-64" bind:index={examIndex}>
               {#snippet slide({ index, Slide })}
@@ -245,6 +251,7 @@
               {/snippet}
             </Thumbnails>
           </div>
+          </Card>
         </PortfolioBody>
       </PortfolioCard>
 
@@ -258,6 +265,7 @@
             <li>Collected information from retailers with Puppeteer and Axios, sending a chat-app notification if a deal is found.</li>
             <li>Utilised MongoDB to store search queries for specific retailers, to be automatically scanned periodically.</li>
           </div>
+          <Card>
           <div class="flex flex-col">
             <Carousel images={dealsImages} duration={0} class="h-64" bind:index={dealsIndex}>
               {#snippet slide({ index, Slide })}
@@ -279,6 +287,7 @@
               {/snippet}
             </Thumbnails>
           </div>
+          </Card>
         </PortfolioBody>
       </PortfolioCard>
 
@@ -294,6 +303,7 @@
             <li>Implemented the SocketIO package for handling user-server communication using WebSocket connections.</li>
             <li>Utilised ReCAPTCHA V3 verification and interfaced with a MongoDB Database using Mongoose.</li>
           </div>
+          <Card>
           <div class="flex flex-col">
             <Carousel images={mafiaImages} duration={0} class="h-64" bind:index={mafiaIndex}>
               {#snippet slide({ index, Slide })}
@@ -334,6 +344,7 @@
               {/snippet}
             </Thumbnails>
           </div>
+          </Card>
         </PortfolioBody>
       </PortfolioCard>
 
@@ -346,6 +357,7 @@
             <li>Developed a mobile application for viewing public transportation timetables in NSW.</li>
             <li>Developed interfaces with Transport for NSW's OpenData API.</li>
           </div>
+          <Card>
           <div class="flex flex-col">
             <Carousel images={timetableImages} duration={0} class="h-64" bind:index={timetableIndex}>
               {#snippet slide({ index, Slide })}
@@ -371,9 +383,9 @@
               {/snippet}
             </Thumbnails>
           </div>
+          </Card>
         </PortfolioBody>
       </PortfolioCard>
 
     </div>
-  </Card>
 </div>
