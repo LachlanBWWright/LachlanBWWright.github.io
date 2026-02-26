@@ -9,7 +9,7 @@
     Lachlan Wright
   </p>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 w-full sm:w-fit gap-2">
+  <div class="grid grid-cols-1 sm:grid-cols-2 w-full gap-2">
     <WhiteLinkButton
       link="https://www.github.com/LachlanBWWright"
       text="GitHub"

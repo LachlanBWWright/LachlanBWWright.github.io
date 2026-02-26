@@ -27,6 +27,7 @@
     "@tailwindcss/vite": "^4.1.11",
     "autoprefixer": "^10.4.16",
     "flowbite-svelte": "^1.31.0",
+    "simple-icons": "^16.9.0",
     "tailwindcss": "^4.1.11"
   }
 }

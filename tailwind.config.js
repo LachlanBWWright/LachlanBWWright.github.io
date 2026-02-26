@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         // Ocean Depths palette
-        primary: "#0A1F44", // deep navy
+        primary: "#1D4ED8", // vivid medium blue
         accent: "#32C5FF", // cyan-blue for highlights
         "bg-dark": "#0C0F14", // nearly black charcoal background
         background: "#0C0F14", // alias for main page background
