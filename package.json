@@ -8,8 +8,7 @@
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "deploy": "gh-pages -d build -t true",
-    "thumb": "npx ts-node scripts/generateResumeThumbnail.ts"
+    "deploy": "gh-pages -d build -t true"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^3.0.0",
@@ -18,6 +17,7 @@
     "@sveltejs/vite-plugin-svelte": "^4.0.0",
     "svelte": "^5.0.0",
     "svelte-check": "^4.0.0",
+    "ts-node": "^10.9.2",
     "tslib": "^2.4.1",
     "typescript": "^5.5.0",
     "vite": "^5.4.4"
@@ -27,6 +27,7 @@
     "@tailwindcss/vite": "^4.1.11",
     "autoprefixer": "^10.4.16",
     "flowbite-svelte": "^1.31.0",
+    "sharp": "^0.34.5",
     "simple-icons": "^16.9.0",
     "tailwindcss": "^4.1.11"
   }
