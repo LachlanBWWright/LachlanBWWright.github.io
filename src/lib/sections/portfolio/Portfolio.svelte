@@ -72,6 +72,12 @@
     { src: "portfolio/timetable/TripLeg.jpg", class: "max-h-96" },
   ];
 
+  const recklessImages = [
+    { src: "portfolio/RecklessDrivinPort/Reckless1.png" },
+    { src: "portfolio/RecklessDrivinPort/Reckless2.png" },
+    { src: "portfolio/RecklessDrivinPort/Reckless3.png" },
+  ];
+
   let cryoIndex = $state(0);
   let pangeaIndex = $state(0);
   let androidIndex = $state(0);
@@ -79,6 +85,7 @@
   let dealsIndex = $state(0);
   let mafiaIndex = $state(0);
   let timetableIndex = $state(0);
+  let recklessIndex = $state(0);
 </script>
 
 <div id="portfolio" class="flex flex-col gap-2">
@@ -592,5 +599,76 @@
         </Card>
       </PortfolioBody>
     </PortfolioCard>
+
+    <!-- Reckless Drivin' WebAssembly Port -->
+    <PortfolioCard>
+      <Subheading>Reckless Drivin' — WebAssembly Port</Subheading>
+      <PortfolioBody>
+        <div class="flex flex-col gap-2">
+          <div class="grid grid-cols-1 xl:grid-cols-2 gap-2">
+            <div class="xl:col-span-2">
+              <WhiteLinkButton
+                text="Deployment"
+                link="https://lachlanbwwright.github.io/RecklessDrivinPort/"
+              />
+            </div>
+            <div class="xl:col-span-2">
+              <WhiteLinkButton
+                text="Repository"
+                link="https://github.com/LachlanBWWright/RecklessDrivinPort"
+              />
+            </div>
+          </div>
+          <li>A WASM Port of the 2000 Mac game "Reckless Drivin'"</li>
+        </div>
+        <Card>
+          <div class="flex flex-col">
+            <Carousel
+              images={recklessImages}
+              duration={0}
+              class="h-64 reckless-carousel"
+              bind:index={recklessIndex}
+            >
+              {#snippet slide({ index, Slide })}
+                <Slide
+                  image={recklessImages[index]}
+                  fit="contain"
+                  class="h-full"
+                />
+              {/snippet}
+              <Controls />
+            </Carousel>
+            <Thumbnails
+              images={recklessImages}
+              bind:index={recklessIndex}
+              class="mt-4 gap-3 bg-transparent h-[68px] py-1 overflow-x-auto overflow-y-hidden"
+            >
+              {#snippet children({ image, selected, Thumbnail })}
+                <Thumbnail
+                  {selected}
+                  {...image}
+                  class="reckless-thumb h-full w-[100px] flex-none rounded-md shadow-xl {selected
+                    ? 'ring-2 ring-blue-500'
+                    : ''}"
+                />
+              {/snippet}
+            </Thumbnails>
+          </div>
+        </Card>
+      </PortfolioBody>
+    </PortfolioCard>
   </div>
 </div>
+
+<style>
+  .reckless-carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .reckless-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
