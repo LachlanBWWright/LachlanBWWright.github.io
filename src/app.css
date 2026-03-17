@@ -14,3 +14,5 @@
   --color-background: #0C0F14;     /* nearly black charcoal background */
   --color-text-light: #E8EAF6;     /* off-white text */
 }
+
+/* No global overrides here — navbar is set above Flowbite defaults (z-60). */

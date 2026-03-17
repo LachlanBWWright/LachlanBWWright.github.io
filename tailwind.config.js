@@ -12,6 +12,13 @@ export default {
         surface: "#2A2F3C", // greyer, desaturated surface
         "off-white": "#E8EAF6", // light text
       },
+      zIndex: {
+        // semantic z-index scale
+        'carousel': '30',
+        'navbar': '50',
+        'tooltip': '60',
+        'modal': '70',
+      },
     },
   },
   plugins: [],
