@@ -129,27 +129,27 @@
 <div id="competencies" class="flex flex-col gap-1">
   <Heading>Competencies</Heading>
   <Subheading>Languages</Subheading>
-    <TechGrid items={languages} />
+  <TechGrid items={languages} />
 
-    <br />
+  <br />
 
-    <Subheading>Frameworks, Libraries, Software</Subheading>
-    <TechGrid items={frontendFrameworks} />
+  <Subheading>Frameworks, Libraries, Software</Subheading>
+  <TechGrid items={frontendFrameworks} />
 
-    <br />
+  <br />
 
-    <Subheading>Frontend Libraries</Subheading>
-    <TechGrid items={frontendLibraries} />
+  <Subheading>Frontend Libraries</Subheading>
+  <TechGrid items={frontendLibraries} />
 
-    <br />
+  <br />
 
-    <Subheading>Backend & Databases</Subheading>
-    <TechGrid items={backendAndDb} />
+  <Subheading>Backend & Databases</Subheading>
+  <TechGrid items={backendAndDb} />
 
-    <br />
+  <br />
 
-    <Subheading>Testing, Integration & Tools</Subheading>
-    <TechGrid items={tooling} />
+  <Subheading>Testing, Integration & Tools</Subheading>
+  <TechGrid items={tooling} />
 
-    <br />
+  <br />
 </div>
