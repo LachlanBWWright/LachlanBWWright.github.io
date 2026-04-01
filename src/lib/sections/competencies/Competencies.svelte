@@ -44,6 +44,11 @@
     siNumpy,
     siPandas,
     siKnime,
+    siAngular,
+    siMongoose,
+    siGithubcopilot,
+    siGooglegemini,
+    siClaude,
   } from "simple-icons";
 
   type TechItem = { name: string; svg: string; info?: string };
@@ -59,12 +64,15 @@
     { name: "HTML", svg: siHtml5.svg },
     { name: "CSS", svg: siCss.svg },
     { name: "PostgreSQL", svg: siPostgresql.svg },
+    { name: "MATLAB", svg: "" },
   ];
 
   const frontendFrameworks: TechItem[] = [
     { name: "React", svg: siReact.svg },
     { name: "Next.js", svg: siNextdotjs.svg },
     { name: "Svelte", svg: siSvelte.svg },
+    { name: "SvelteKit", svg: siSvelte.svg },
+    { name: "Angular", svg: siAngular.svg },
     { name: "TanStack Query", svg: siTanstack.svg },
     { name: "Immer", svg: siImmer.svg },
     { name: "Spring", svg: siSpring.svg },
@@ -77,6 +85,10 @@
     { name: "tRPC", svg: siTrpc.svg },
     { name: "Socket.IO", svg: siSocketdotio.svg },
     { name: "ShadCN", svg: siShadcnui.svg },
+    { name: "Jotai", svg: "" },
+    { name: "PartyKit", svg: "" },
+    { name: "Pyodide", svg: "" },
+    { name: "TipTap", svg: "" },
   ];
 
   const backendAndDb: TechItem[] = [
@@ -84,6 +96,7 @@
     { name: "Express", svg: siExpress.svg },
     { name: "Prisma", svg: siPrisma.svg },
     { name: "MongoDB", svg: siMongodb.svg },
+    { name: "Mongoose", svg: siMongoose.svg },
     { name: "Hibernate", svg: siHibernate.svg },
     { name: "SQLAlchemy", svg: siSqlalchemy.svg },
     { name: "SQLite", svg: siSqlite.svg },
@@ -102,6 +115,14 @@
     { name: "NumPy", svg: siNumpy.svg },
     { name: "Pandas", svg: siPandas.svg },
     { name: "KNIME", svg: siKnime.svg },
+    { name: "GitHub Copilot", svg: siGithubcopilot.svg },
+    { name: "Gemini", svg: siGooglegemini.svg },
+    { name: "Claude", svg: siClaude.svg },
+    { name: "Azure", svg: "" },
+    { name: "Heroku", svg: "" },
+    { name: "Antigravity", svg: "" },
+    { name: "Codex", svg: "" },
+    { name: "OpenCode", svg: "" },
   ];
 </script>
 
@@ -129,4 +150,6 @@
 
     <Subheading>Testing, Integration & Tools</Subheading>
     <TechGrid items={tooling} />
+
+    <br />
 </div>

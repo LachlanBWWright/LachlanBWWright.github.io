@@ -21,17 +21,10 @@
   </div>
   <div>
     <p class="text-justify">
-      I am an aspiring software developer, with a lifelong fascination with
-      technology. While passionate about all aspects of software development and
-      eager to expand by knowledge and capabilities, I have a particular
-      interest in web development.
-    </p>
-    <br />
-    <p class="text-justify">
-      I have finished a Bachelor of Software Engineering at UTS with
-      distinction-average results. I am currently looking for opportunities to
-      further my existing competencies, and to improve my capabilities with new
-      technologies and frameworks.
+      Full-stack Software Engineer with experience developing and deploying
+      scalable web applications. Looking to deepen my experience and
+      capabilities in building reliable, production-grade systems while
+      continuously expanding my skillset across new frameworks and languages.
     </p>
   </div>
 </div>
