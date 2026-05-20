@@ -45,10 +45,12 @@
     siPandas,
     siKnime,
     siAngular,
+    siVuedotjs,
     siMongoose,
     siGithubcopilot,
     siGooglegemini,
     siClaude,
+    siDotnet,
   } from "simple-icons";
 
   type TechItem = { name: string; svg: string; info?: string };
@@ -60,6 +62,7 @@
     { name: "Dart", svg: siDart.svg },
     { name: "Python", svg: siPython.svg },
     { name: "C", svg: siC.svg },
+    { name: "C#", svg: siDotnet.svg },
     { name: "Rust", svg: siRust.svg },
     { name: "HTML", svg: siHtml5.svg },
     { name: "CSS", svg: siCss.svg },
@@ -73,10 +76,12 @@
     { name: "Svelte", svg: siSvelte.svg },
     { name: "SvelteKit", svg: siSvelte.svg },
     { name: "Angular", svg: siAngular.svg },
+    { name: "Vue.js", svg: siVuedotjs.svg },
     { name: "TanStack Query", svg: siTanstack.svg },
     { name: "Immer", svg: siImmer.svg },
     { name: "Spring", svg: siSpring.svg },
     { name: "Flutter", svg: siFlutter.svg },
+    { name: "WinUI 3", svg: "" },
   ];
 
   const frontendLibraries: TechItem[] = [

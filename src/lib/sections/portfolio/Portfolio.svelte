@@ -8,6 +8,7 @@
   import PangeaResourceEdit from "./PangeaResourceEdit.svelte";
   import PublicTransportApp from "./PublicTransportApp.svelte";
   import RecklessDrivinPort from "./RecklessDrivinPort.svelte";
+  import WiitarThing from "./WiitarThing.svelte";
 </script>
 
 <div id="portfolio" class="flex flex-col gap-2">
@@ -21,5 +22,6 @@
     <LBWWMafia />
     <PublicTransportApp />
     <RecklessDrivinPort />
+    <WiitarThing />
   </div>
 </div>
