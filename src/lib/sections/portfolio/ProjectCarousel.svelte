@@ -18,8 +18,8 @@
   let {
     images,
     carouselClass = "h-64",
-    thumbnailClass = "mt-4 gap-3 bg-transparent h-[68px] py-1 overflow-x-auto overflow-y-hidden",
-    thumbnailImageClass = "h-full w-[100px] object-cover flex-none rounded-md shadow-xl",
+    thumbnailClass = "mt-4 gap-3 bg-transparent h-[68px] p-1 overflow-x-auto overflow-y-hidden",
+    thumbnailImageClass = "h-full w-[100px] object-cover flex-none rounded-md shadow-xl transition-shadow hover:ring-2 hover:ring-primary",
   }: Props = $props();
 
   let index = $state(0);
@@ -61,7 +61,7 @@
           {selected}
           class={joinClasses(
             thumbnailImageClass,
-            selected && "ring-2 ring-blue-500",
+            selected && "ring-2 ring-primary",
           )}
         />
       {:else}
@@ -70,7 +70,7 @@
           {...currentImage}
           class={joinClasses(
             thumbnailImageClass,
-            selected && "ring-2 ring-blue-500",
+            selected && "ring-2 ring-primary",
           )}
         />
       {/if}

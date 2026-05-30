@@ -1,113 +1,53 @@
 <script lang="ts">
-  import { onMount } from "svelte";
-  import { getCurrentSection, sections } from "$lib/utils/scrollUtils";
+  import { sections } from "$lib/utils/scrollUtils";
+  import { createSectionScrollState } from "$lib/utils/sectionScrollState.svelte";
 
-  let scrollProgress = $state(0);
-  let activeSectionIndex = $state(0);
-  let completedSections = $state(0);
+  const sectionLabels: Record<string, string> = {
+    header: "Profile",
+    competencies: "Competencies",
+    experience: "Experience",
+    portfolio: "Portfolio",
+    resume: "Resume",
+    "academic-record": "Records",
+  };
 
-  let activeSectionProgress = $state(0);
-
-  // helper for scrolling to a section (mirrors Navbar behaviour)
-  function scrollToSection(target: string) {
-    const anchor = document.getElementById(target);
-    if (!anchor) return;
-    const navbarRef = document.getElementById("navbar");
-    window.scrollTo({
-      top: anchor.offsetTop - (navbarRef?.clientHeight ?? 32),
-      behavior: "smooth",
-    });
-  }
-
-  function updateScrollProgress() {
-    const scrollTop = window.scrollY;
-    const docHeight =
-      document.documentElement.scrollHeight - window.innerHeight;
-    scrollProgress = Math.min((scrollTop / docHeight) * 100, 100);
-
-    // Use the same logic as navbar to determine active section
-    const currentSection = getCurrentSection();
-    activeSectionIndex = sections.indexOf(currentSection);
-
-    // Special handling for edge cases
-    if (scrollTop === 0) {
-      // At the very top - header is completed and active
-      activeSectionIndex = 0;
-      completedSections = 1; // Header is completed
-      activeSectionProgress = 100; // Header shows as fully filled
-      return;
-    }
-
-    if (window.innerHeight + scrollTop >= document.body.offsetHeight - 10) {
-      // At the very bottom - all sections completed, academic-record fully filled
-      completedSections = sections.length;
-      activeSectionIndex = sections.length - 1;
-      activeSectionProgress = 100;
-      return;
-    }
-
-    // Determine completed sections based on active section
-    completedSections = activeSectionIndex;
-
-    // Calculate progress within the current active section
-    const activeElement = document.getElementById(currentSection);
-    if (activeElement) {
-      const elementTop = activeElement.offsetTop;
-      const elementHeight = activeElement.offsetHeight;
-      const viewportHeight = window.innerHeight;
-
-      // Calculate how far we are through this section
-      const sectionStart = elementTop - viewportHeight / 2;
-      const sectionEnd = elementTop + elementHeight - viewportHeight / 2;
-      const sectionProgress = Math.max(
-        0,
-        Math.min(1, (scrollTop - sectionStart) / (sectionEnd - sectionStart)),
-      );
-
-      activeSectionProgress = sectionProgress * 100;
-    } else {
-      activeSectionProgress = 0;
-    }
-  }
-
-  onMount(() => {
-    window.addEventListener("scroll", updateScrollProgress);
-    updateScrollProgress(); // Initial call
-
-    return () => {
-      window.removeEventListener("scroll", updateScrollProgress);
-    };
-  });
+  const sectionScroll = createSectionScrollState();
 </script>
 
 <div class="sticky top-1/2 transform -translate-y-1/2 self-start">
-  <div class="flex flex-col items-center space-y-3">
+  <div
+    class="relative flex h-64 flex-col items-center justify-between rounded-full bg-white/15 px-1 py-4"
+  >
     {#each sections as section, index}
-      {@const isActive = index === activeSectionIndex}
-      {@const isCompleted = index < completedSections}
-      {@const height = isActive ? "h-16" : "h-8"}
-      {@const width = isActive ? "w-2" : "w-1"}
+      {@const isActive = index === sectionScroll.activeSectionIndex}
+      {@const isCompleted = index < sectionScroll.completedSections}
 
       <button
         type="button"
         aria-label={section}
-        onclick={() => scrollToSection(section)}
-        class="transition-all duration-500 ease-out {width} {height} rounded-full overflow-hidden relative cursor-pointer focus:outline-none"
+        onclick={() => sectionScroll.scrollToSection(section)}
+        class="group relative flex h-10 w-5 items-center justify-center overflow-visible rounded-full cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
       >
-        {#if isActive}
-          <!-- Active section: white background with blue fill from top to bottom -->
-          <div class="w-full h-full bg-white rounded-full"></div>
-          <div
-            class="absolute top-0 w-full bg-primary rounded-t-full transition-all duration-300 ease-out"
-            style="height: {activeSectionProgress}%; border-radius: 0 0 9999px 9999px;"
-          ></div>
-        {:else if isCompleted}
-          <!-- Completed sections: fully filled -->
-          <div class="w-full h-full bg-primary rounded-full"></div>
-        {:else}
-          <!-- Not reached sections: white -->
-          <div class="w-full h-full bg-white rounded-full"></div>
-        {/if}
+        <span
+          class="pointer-events-none absolute right-7 top-1/2 -translate-y-1/2 whitespace-nowrap rounded bg-primary px-2 py-1 text-xs font-medium text-white opacity-0 shadow-lg transition duration-150 group-hover:opacity-100 group-focus-visible:opacity-100"
+        >
+          {sectionLabels[section]}
+        </span>
+
+        <div
+          class={isActive
+            ? "relative h-10 w-2 overflow-hidden rounded-full bg-white transition-all duration-300 ease-out"
+            : isCompleted
+              ? "relative h-3 w-3 overflow-hidden rounded-full bg-primary transition-all duration-300 ease-out"
+              : "relative h-3 w-3 overflow-hidden rounded-full bg-white/80 transition-all duration-300 ease-out group-hover:bg-white"}
+        >
+          {#if isActive}
+            <div
+              class="absolute top-0 w-full bg-primary transition-all duration-300 ease-out"
+              style="height: {sectionScroll.activeSectionProgress}%; border-radius: 0 0 9999px 9999px;"
+            ></div>
+          {/if}
+        </div>
       </button>
     {/each}
   </div>

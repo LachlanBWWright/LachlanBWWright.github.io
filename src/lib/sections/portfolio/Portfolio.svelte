@@ -14,14 +14,14 @@
 <div id="portfolio" class="flex flex-col gap-2">
   <Heading>Portfolio</Heading>
   <div class="grid grid-cols-1 gap-6">
-    <CryogenicWiringSimulation />
     <PangeaResourceEdit />
     <AndroidPorts />
-    <OnlineExamSystem />
     <DealScanner />
     <LBWWMafia />
     <PublicTransportApp />
     <RecklessDrivinPort />
     <WiitarThing />
+    <OnlineExamSystem />
+    <CryogenicWiringSimulation />
   </div>
 </div>
