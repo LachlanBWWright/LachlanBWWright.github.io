@@ -2,6 +2,7 @@
   "name": "lbww-github-pages",
   "version": "0.0.1",
   "private": true,
+  "packageManager": "pnpm@10.28.1",
   "scripts": {
     "dev": "vite dev --host",
     "build": "vite build",
