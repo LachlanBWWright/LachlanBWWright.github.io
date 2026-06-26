@@ -5,6 +5,11 @@
   font-family: 'DM Sans', sans-serif;
 }
 
+html,
+body {
+  background-color: #0C0F14;
+}
+
 @theme {
   /* Ocean Depths variables */
   --color-primary: #1D4ED8;        /* vivid medium blue */
