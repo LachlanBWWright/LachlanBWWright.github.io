@@ -138,14 +138,10 @@
         </Thumbnails>
       </div>
       </Card>
-      <div class="flex flex-col sm:flex-row sm:items-center w-full gap-3 mt-4">
+      <div class="w-full mt-4">
         <WhiteLinkButton
           link="https://www.myequals.net/sharelink/52d0c82d-0fd7-42f3-b731-a812c53474bb/33d1cd47-f984-40ca-9652-5e5054981b1d"
           text="View Transcript"
-        />
-        <WhiteLinkButton
-          link="https://www.myequals.net/sharelink/downloaddoc/52d0c82d-0fd7-42f3-b731-a812c53474bb/33d1cd47-f984-40ca-9652-5e5054981b1d"
-          text="Download Transcript"
         />
       </div>
     </div>
