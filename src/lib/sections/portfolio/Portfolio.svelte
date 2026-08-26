@@ -8,6 +8,8 @@
   import PangeaResourceEdit from "./PangeaResourceEdit.svelte";
   import PublicTransportApp from "./PublicTransportApp.svelte";
   import RecklessDrivinPort from "./RecklessDrivinPort.svelte";
+  import ResourceForkParser from "./ResourceForkParser.svelte";
+  import SteamInvEdit from "./SteamInvEdit.svelte";
   import WiitarThing from "./WiitarThing.svelte";
 </script>
 
@@ -15,6 +17,8 @@
   <Heading>Portfolio</Heading>
   <div class="grid grid-cols-1 gap-6">
     <PangeaResourceEdit />
+    <ResourceForkParser />
+    <SteamInvEdit />
     <AndroidPorts />
     <DealScanner />
     <LBWWMafia />
