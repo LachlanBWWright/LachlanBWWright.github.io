@@ -94,5 +94,14 @@
       Demonstrated foundational knowledge of cloud services and how those
       services are provided with Microsoft Azure.
     </li>
+    <li>
+      <a
+        href="https://www.credly.com/badges/ed5f52b8-5fb9-4bfb-bc1b-050079cfb449"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-blue-400 hover:text-blue-300 hover:underline"
+        >View Credly badge</a
+      >
+    </li>
   </BaseList>
 </div>
