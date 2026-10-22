@@ -107,6 +107,8 @@
           </tr>
         </tbody>
       </table>
+      <details class="w-full">
+      <summary class="cursor-pointer py-3 text-accent">Preview academic transcript</summary>
       <Card>
       <div class="flex flex-col w-full">
         <div class="transcript-carousel">
@@ -138,6 +140,7 @@
         </Thumbnails>
       </div>
       </Card>
+      </details>
       <div class="w-full mt-4">
         <WhiteLinkButton
           link="https://www.myequals.net/sharelink/52d0c82d-0fd7-42f3-b731-a812c53474bb/33d1cd47-f984-40ca-9652-5e5054981b1d"

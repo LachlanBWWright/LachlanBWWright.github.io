@@ -1,7 +1,7 @@
 export const sections = [
   "header",
-  "competencies",
   "experience",
+  "competencies",
   "portfolio",
   "resume",
   "academic-record",

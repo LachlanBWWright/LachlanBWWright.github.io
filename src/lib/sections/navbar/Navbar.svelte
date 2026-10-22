@@ -2,94 +2,54 @@
   import { sections, type SectionId } from "$lib/utils/scrollUtils";
   import { createSectionScrollState } from "$lib/utils/sectionScrollState.svelte";
 
-  //Buttons that appear on desktop view, but are hidden on mobile view
-  let unselectedButton =
-    "hover:font-bold transition-all duration-200 hidden sm:block transition";
-  let selectedButton =
-    "font-bold transition-all  hidden sm:block underline duration-200 transition";
-  //Buttons that appear on mobile view (May be hidden by virtue of a hidden parent on desktop)
-  let mobileUnselectedButton =
-    "text-xl hover:font-bold transition-all duration-200 transition";
-  let mobileSelectedButton =
-    "text-xl font-bold transition-all underline duration-200 transition";
-
+  const labels: Record<SectionId, string> = {
+    header: "Profile",
+    portfolio: "Projects",
+    experience: "Experience",
+    competencies: "Skills",
+    resume: "Resume",
+    "academic-record": "Records",
+  };
   const sectionScroll = createSectionScrollState();
 
-  function handleNavbarClick(event: MouseEvent, target: SectionId) {
+  function navigate(event: MouseEvent, target: SectionId) {
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
     sectionScroll.scrollToSection(target);
   }
 </script>
 
-<nav
-  id="navbar"
-  class={sectionScroll.scrolledToTop
-    ? "hidden sm:flex sticky top-0 flex-row items-center gap-6 px-3 py-1 w-full bg-background shadow-none text-white text-base sm:text-base md:text-xl lg:text-2xl xl:text-3xl justify-center h-4 sm:h-16 transition duration-500 z-[60]"
-    : "hidden sm:flex sticky top-0 flex-row items-center gap-6 px-3 py-1 w-full bg-primary shadow-2xl text-white text-base sm:text-base md:text-xl lg:text-2xl xl:text-3xl justify-center h-4 sm:h-16 transition duration-500 z-[60]"}
->
-  <!-- mobile dropdown removed: show only centered thin progress bars on smallest breakpoint -->
-  <button
-    class={sectionScroll.activeSection === "header" ? selectedButton : unselectedButton}
-    onclick={(e) => handleNavbarClick(e, "header")}>Profile</button
-  >
-  <button
-    class={sectionScroll.activeSection === "competencies"
-      ? selectedButton
-      : unselectedButton}
-    onclick={(e) => handleNavbarClick(e, "competencies")}>Competencies</button
-  >
-  <button
-    class={sectionScroll.activeSection === "experience"
-      ? selectedButton
-      : unselectedButton}
-    onclick={(e) => handleNavbarClick(e, "experience")}>Experience</button
-  >
-  <button
-    class={sectionScroll.activeSection === "portfolio"
-      ? selectedButton
-      : unselectedButton}
-    onclick={(e) => handleNavbarClick(e, "portfolio")}>Portfolio</button
-  >
-  <button
-    class={sectionScroll.activeSection === "resume" ? selectedButton : unselectedButton}
-    onclick={(e) => handleNavbarClick(e, "resume")}>Resume</button
-  >
-  <button
-    class={sectionScroll.activeSection === "academic-record"
-      ? selectedButton
-      : unselectedButton}
-    onclick={(e) => handleNavbarClick(e, "academic-record")}>Records</button
-  >
-  <!-- Mobile progress bars: thin horizontal bars that span full navbar width and fill left->right -->
-  <div
-    class="w-full flex sm:hidden items-center justify-center py-1 px-3 gap-1"
-  >
-    {#each sections as sec, index}
-      {@const isActive = index === sectionScroll.activeSectionIndex}
-      {@const isCompleted = index < sectionScroll.completedSections}
-      <button
-        aria-label={sec}
-        onclick={(e) => handleNavbarClick(e, sec)}
-        class="group h-2 rounded-full overflow-visible relative transition-all duration-300 ease-out"
-        style="flex: {isActive ? '2 1 0%' : '1 1 0%'}"
-      >
-        <!-- background track -->
-        <div class="absolute inset-0 bg-gray-500 rounded-full"></div>
-
-        {#if isActive}
-          <!-- active: left-to-right fill according to progress -->
-          <div
-            class="absolute left-0 top-0 bottom-0 bg-white rounded-full transition-all"
-            style="width: {sectionScroll.activeSectionProgress}%"
-          ></div>
-        {:else if isCompleted}
-          <!-- completed: fully filled -->
-          <div class="absolute inset-0 bg-white rounded-full"></div>
-        {/if}
-
-        <span class="sr-only">{sec}</span>
-      </button>
+<nav id="navbar" aria-label="Main navigation" class:colored={!sectionScroll.scrolledToTop}>
+  <div class="links">
+    {#each sections as section}
+      <a
+        href="#{section}"
+        aria-current={sectionScroll.activeSection === section ? "location" : undefined}
+        onclick={(event) => navigate(event, section)}
+      >{labels[section]}</a>
     {/each}
   </div>
-  <!-- mobile dropdown removed -->
 </nav>
+
+<style>
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 60;
+    width: 100%;
+    background-color: var(--color-background);
+    transition: background-color 500ms ease, box-shadow 500ms ease;
+    overflow-x: auto;
+  }
+  nav.colored { background-color: var(--color-primary); box-shadow: 0 8px 24px #0003; }
+  .links { display: flex; align-items: center; justify-content: center; gap: 1.75rem; width: max-content; min-width: 100%; padding: 0.5rem 1rem; }
+  a { display: inline-flex; align-items: center; min-height: 48px; font-size: 1.125rem; text-underline-offset: 0.35em; }
+  a[aria-current], a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
+  a[aria-current] { font-weight: 600; }
+  a:focus-visible { outline: 2px solid white; outline-offset: 3px; border-radius: 2px; }
+  @media (max-width: 639px) {
+    .links { gap: 0.75rem; justify-content: flex-start; padding: 0.25rem 0.75rem; }
+    a { min-height: 44px; font-size: 0.875rem; }
+  }
+  @media (prefers-reduced-motion: reduce) { nav { transition: none; } }
+</style>

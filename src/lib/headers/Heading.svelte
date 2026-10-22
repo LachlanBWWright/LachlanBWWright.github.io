@@ -6,8 +6,8 @@
   let { children }: Props = $props();
 </script>
 
-<p
-  class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center pb-2 text-white"
+<h2
+  class="text-3xl sm:text-4xl lg:text-5xl font-semibold pb-4 text-white"
 >
   {@render children?.()}
-</p>
+</h2>

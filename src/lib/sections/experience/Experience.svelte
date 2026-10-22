@@ -6,7 +6,7 @@
   import BaseList from "$lib/lists/BaseList.svelte";
 </script>
 
-<div id="experience" class="flex flex-col gap-1">
+<div id="experience" class="flex flex-col gap-1 max-w-[75ch]">
   <Heading>Experience</Heading>
   <Subheading>Employment</Subheading>
 

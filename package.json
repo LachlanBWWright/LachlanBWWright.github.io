@@ -10,13 +10,17 @@
     "thumb": "bash scripts/generateResumeThumbnail.sh",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "deploy": "gh-pages -d build -t true"
+    "deploy": "gh-pages -d build -t true",
+    "storybook": "storybook dev --host 127.0.0.1 --port 6006 --exact-port --no-open",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
+    "@storybook/sveltekit": "^10.6.3",
     "@sveltejs/adapter-auto": "^3.0.0",
     "@sveltejs/adapter-static": "^3.0.1",
     "@sveltejs/kit": "^2.5.27",
     "@sveltejs/vite-plugin-svelte": "^4.0.0",
+    "storybook": "^10.6.3",
     "svelte": "^5.0.0",
     "svelte-check": "^4.0.0",
     "ts-node": "^10.9.2",

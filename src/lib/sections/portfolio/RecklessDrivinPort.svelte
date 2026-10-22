@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Card from "$lib/cards/Card.svelte";
   import WhiteLinkButton from "$lib/buttons/WhiteLinkButton.svelte";
   import PortfolioBody from "$lib/items/PortfolioBody.svelte";
   import PortfolioCard from "$lib/items/PortfolioCard.svelte";
@@ -7,9 +6,9 @@
   import ProjectCarousel from "./ProjectCarousel.svelte";
 
   const images = [
-    { src: "portfolio/RecklessDrivinPort/Reckless1.png" },
-    { src: "portfolio/RecklessDrivinPort/Reckless2.png" },
-    { src: "portfolio/RecklessDrivinPort/Reckless3.png" },
+    { src: "portfolio/RecklessDrivinPort/Reckless1.png", alt: "Reckless Drivin WebAssembly port showing the game start screen" },
+    { src: "portfolio/RecklessDrivinPort/Reckless2.png", alt: "Reckless Drivin WebAssembly port showing a driving scene" },
+    { src: "portfolio/RecklessDrivinPort/Reckless3.png", alt: "Reckless Drivin running in the browser with an overhead view of the road" },
   ];
 </script>
 
@@ -40,26 +39,6 @@
         using Angular Material and Konva Libraries.
       </li>
     </div>
-    <Card>
-      <ProjectCarousel
-        {images}
-        carouselClass="h-64 reckless-carousel"
-        thumbnailImageClass="reckless-thumb h-full w-[100px] flex-none rounded-md shadow-xl"
-      />
-    </Card>
+    <ProjectCarousel {images} />
   </PortfolioBody>
 </PortfolioCard>
-
-<style>
-  :global(.reckless-carousel img) {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-
-  :global(.reckless-thumb img) {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-</style>

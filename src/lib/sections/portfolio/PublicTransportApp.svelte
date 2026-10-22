@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Card from "$lib/cards/Card.svelte";
   import WhiteLinkButton from "$lib/buttons/WhiteLinkButton.svelte";
   import PortfolioBody from "$lib/items/PortfolioBody.svelte";
   import PortfolioCard from "$lib/items/PortfolioCard.svelte";
@@ -7,10 +6,10 @@
   import ProjectCarousel from "./ProjectCarousel.svelte";
 
   const images = [
-    { src: "portfolio/timetable/Menu.jpg", class: "max-h-96" },
-    { src: "portfolio/timetable/StopMap.jpg", class: "max-h-96" },
-    { src: "portfolio/timetable/Trip.jpg", class: "max-h-96" },
-    { src: "portfolio/timetable/TripLeg.jpg", class: "max-h-96" },
+    { src: "portfolio/timetable/Menu.jpg", alt: "Public transport app showing its trip search form", class: "max-h-96" },
+    { src: "portfolio/timetable/StopMap.jpg", alt: "Public transport app displaying stops on a map", class: "max-h-96" },
+    { src: "portfolio/timetable/Trip.jpg", alt: "Public transport app displaying a trip itinerary", class: "max-h-96" },
+    { src: "portfolio/timetable/TripLeg.jpg", alt: "Public transport app displaying the route map for a trip segment", class: "max-h-96" },
   ];
 </script>
 
@@ -35,8 +34,6 @@
         Flutter Map.
       </li>
     </div>
-    <Card>
-      <ProjectCarousel {images} />
-    </Card>
+    <ProjectCarousel {images} />
   </PortfolioBody>
 </PortfolioCard>

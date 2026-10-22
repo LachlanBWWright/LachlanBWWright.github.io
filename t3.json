@@ -1,0 +1,58 @@
+{
+  "$schema": "https://t3.codes/schema/t3.json",
+  "scripts": [
+    {
+      "name": "Install dependencies",
+      "command": "pnpm install --frozen-lockfile",
+      "icon": "configure",
+      "runOnWorktreeCreate": true,
+      "async": false
+    },
+    {
+      "name": "Start development server",
+      "command": "pnpm dev --host 127.0.0.1 --port 5173 --strictPort",
+      "icon": "play",
+      "previewUrl": "http://localhost:5173/",
+      "autoOpenPreview": true
+    },
+    {
+      "name": "Check Svelte and TypeScript",
+      "command": "pnpm check",
+      "icon": "lint"
+    },
+    {
+      "name": "Watch Svelte and TypeScript checks",
+      "command": "pnpm check:watch",
+      "icon": "lint"
+    },
+    {
+      "name": "Build production site",
+      "command": "pnpm build",
+      "icon": "build"
+    },
+    {
+      "name": "Build and preview production site",
+      "command": "pnpm build && pnpm preview --host 127.0.0.1 --port 4173 --strictPort",
+      "icon": "play",
+      "previewUrl": "http://localhost:4173/",
+      "autoOpenPreview": true
+    },
+    {
+      "name": "Run validation checks",
+      "command": "pnpm check && pnpm build",
+      "icon": "test"
+    },
+    {
+      "name": "Start Storybook",
+      "command": "pnpm storybook",
+      "icon": "play",
+      "previewUrl": "http://localhost:6006/",
+      "autoOpenPreview": true
+    },
+    {
+      "name": "Build Storybook",
+      "command": "pnpm build-storybook",
+      "icon": "build"
+    }
+  ]
+}

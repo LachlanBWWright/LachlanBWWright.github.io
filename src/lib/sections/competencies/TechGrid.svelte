@@ -4,53 +4,29 @@
     svg: string;
     info?: string;
   }
-
-  interface Props {
-    items: TechItem[];
-  }
-
+  interface Props { items: TechItem[]; }
   let { items }: Props = $props();
 </script>
 
-<div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 mt-2">
+<ul class="tech-grid">
   {#each items as item}
-    <div
-      class="relative aspect-square flex flex-col items-center justify-center gap-3 bg-gray-800 dark:bg-gray-700 rounded-lg group"
-    >
-      <div class="w-16 h-16 flex items-center justify-center">
-        {#if item.svg}
-          <div class="w-16 h-16 [&>svg]:w-16 [&>svg]:h-16 [&>svg]:fill-white">
-            {@html item.svg}
-          </div>
-        {:else}
-          <div
-            class="w-16 h-16 rounded-lg bg-gray-700 flex items-center justify-center text-xs text-white text-center px-1"
-          >
-            {item.name}
-          </div>
-        {/if}
-      </div>
-      <span
-        class="text-white text-base font-semibold text-center leading-tight px-2"
-        >{item.name}</span
-      >
-
-      {#if item.info}
-        <div
-          class="absolute top-2 right-2 w-4 h-4 rounded-full bg-white/20 flex items-center justify-center cursor-default"
-        >
-          <span class="text-white text-[10px] font-bold leading-none">i</span>
-        </div>
-
-        <div
-          class="pointer-events-none absolute bottom-[calc(100%+8px)] left-1/2 -translate-x-1/2 w-48 bg-gray-900 text-white text-xs rounded-lg px-3 py-2 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-150 z-10"
-        >
-          {item.info}
-          <div
-            class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-gray-900"
-          ></div>
-        </div>
+    <li>
+      {#if item.svg}
+        <span class="tech-icon" aria-hidden="true">{@html item.svg}</span>
+      {:else}
+        <span class="tech-placeholder" aria-hidden="true"></span>
       {/if}
-    </div>
+      <span>{item.name}</span>
+      {#if item.info}<span class="sr-only">: {item.info}</span>{/if}
+    </li>
   {/each}
-</div>
+</ul>
+
+<style>
+  .tech-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.65rem 1.5rem; margin-top: 0.75rem; }
+  li { display: flex; align-items: center; gap: 0.75rem; min-width: 0; padding-block: 0.4rem; font-size: 1rem; line-height: 1.4; }
+  .tech-icon { display: flex; width: 24px; height: 24px; flex: none; }
+  .tech-icon :global(svg) { width: 100%; height: 100%; fill: var(--color-text-light); }
+  .tech-placeholder { width: 24px; flex: none; }
+  @media (max-width: 767px) { .tech-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.5rem 1rem; } li { font-size: 0.9rem; } }
+</style>

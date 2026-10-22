@@ -14,21 +14,21 @@
 >
   <Navbar />
   <div class="flex flex-row max-w-[1300px] w-full px-2 sm:px-4 gap-3">
-    <div class="flex-1 flex flex-col gap-40">
+    <main class="min-w-0 flex-1 flex flex-col gap-20 sm:gap-32">
       <Header />
 
-      <Competencies />
-
       <Experience />
+
+      <Competencies />
 
       <Portfolio />
 
       <Resume />
 
       <AcademicRecord />
-    </div>
+    </main>
     <!-- sidebar column: fixed width, prevents overlap -->
-    <div class="w-4 flex-none flex justify-center">
+    <div class="hidden sm:flex w-4 flex-none justify-center">
       <ScrollProgress />
     </div>
   </div>

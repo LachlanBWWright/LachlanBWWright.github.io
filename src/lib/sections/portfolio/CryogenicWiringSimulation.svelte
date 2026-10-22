@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Card from "$lib/cards/Card.svelte";
   import PortfolioBody from "$lib/items/PortfolioBody.svelte";
   import PortfolioCard from "$lib/items/PortfolioCard.svelte";
   import Subheading from "$lib/headers/Subheading.svelte";
@@ -40,8 +39,6 @@
         progress.
       </li>
     </div>
-    <Card>
-      <ProjectCarousel {images} />
-    </Card>
+    <ProjectCarousel {images} />
   </PortfolioBody>
 </PortfolioCard>

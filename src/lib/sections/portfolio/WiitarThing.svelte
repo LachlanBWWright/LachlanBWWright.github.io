@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Card from "$lib/cards/Card.svelte";
   import WhiteLinkButton from "$lib/buttons/WhiteLinkButton.svelte";
   import PortfolioBody from "$lib/items/PortfolioBody.svelte";
   import PortfolioCard from "$lib/items/PortfolioCard.svelte";
@@ -7,9 +6,9 @@
   import ProjectCarousel from "./ProjectCarousel.svelte";
 
   const images = [
-    { src: "portfolio/wiitarThing/WiitarThing1.png" },
-    { src: "portfolio/wiitarThing/WiitarThing2.png" },
-    { src: "portfolio/wiitarThing/WiitarThing3.png" },
+    { src: "portfolio/wiitarThing/WiitarThing1.png", alt: "WiitarThing controller configuration interface" },
+    { src: "portfolio/wiitarThing/WiitarThing2.png", alt: "WiitarThing displaying controller settings and device information" },
+    { src: "portfolio/wiitarThing/WiitarThing3.png", alt: "WiitarThing displaying a connected controller and its settings" },
   ];
 </script>
 
@@ -26,26 +25,6 @@
         application.
       </li>
     </div>
-    <Card>
-      <ProjectCarousel
-        {images}
-        carouselClass="h-64 wiitarthing-carousel"
-        thumbnailImageClass="wiitarthing-thumb h-full w-[100px] flex-none rounded-md shadow-xl"
-      />
-    </Card>
+    <ProjectCarousel {images} />
   </PortfolioBody>
 </PortfolioCard>
-
-<style>
-  :global(.wiitarthing-carousel img) {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-
-  :global(.wiitarthing-thumb img) {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-</style>

@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Card from "$lib/cards/Card.svelte";
   import WhiteLinkButton from "$lib/buttons/WhiteLinkButton.svelte";
   import PortfolioBody from "$lib/items/PortfolioBody.svelte";
   import PortfolioCard from "$lib/items/PortfolioCard.svelte";
@@ -16,8 +15,8 @@
       src: "portfolio/mafia/Mafia1.png",
       alt: "Screenshot of web application.",
     },
-    { src: "portfolio/mafia/Mafia2.png" },
-    { src: "portfolio/mafia/Mafia3.png" },
+    { src: "portfolio/mafia/Mafia2.png", alt: "Mafia multiplayer game showing role and game state across player views" },
+    { src: "portfolio/mafia/Mafia3.png", alt: "Mafia multiplayer game showing synchronized player interfaces" },
   ];
 </script>
 
@@ -54,8 +53,6 @@
         Database using Mongoose.
       </li>
     </div>
-    <Card>
-      <ProjectCarousel {images} />
-    </Card>
+    <ProjectCarousel {images} />
   </PortfolioBody>
 </PortfolioCard>

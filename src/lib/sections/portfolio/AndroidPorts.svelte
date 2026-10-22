@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Card from "$lib/cards/Card.svelte";
   import WhiteLinkButton from "$lib/buttons/WhiteLinkButton.svelte";
   import PortfolioBody from "$lib/items/PortfolioBody.svelte";
   import PortfolioCard from "$lib/items/PortfolioCard.svelte";
@@ -7,13 +6,13 @@
   import ProjectCarousel from "./ProjectCarousel.svelte";
 
   const images = [
-    { src: "portfolio/androidPorts/OttoMatic.jpg" },
-    { src: "portfolio/androidPorts/BillyFrontier.jpg" },
-    { src: "portfolio/androidPorts/Bugdom1.jpg" },
-    { src: "portfolio/androidPorts/Bugdom2.jpg" },
-    { src: "portfolio/androidPorts/CroMagRally.jpg" },
-    { src: "portfolio/androidPorts/Nanosaur1.jpg" },
-    { src: "portfolio/androidPorts/Nanosaur2.jpg" },
+    { src: "portfolio/androidPorts/OttoMatic.jpg", alt: "Otto Matic running on Android with touch controls" },
+    { src: "portfolio/androidPorts/BillyFrontier.jpg", alt: "Billy Frontier running on Android with touch controls" },
+    { src: "portfolio/androidPorts/Bugdom1.jpg", alt: "Bugdom running on Android with touch controls" },
+    { src: "portfolio/androidPorts/Bugdom2.jpg", alt: "Bugdom 2 running on Android with touch controls" },
+    { src: "portfolio/androidPorts/CroMagRally.jpg", alt: "Cro-Mag Rally running on Android with touch controls" },
+    { src: "portfolio/androidPorts/Nanosaur1.jpg", alt: "Nanosaur running on Android with touch controls" },
+    { src: "portfolio/androidPorts/Nanosaur2.jpg", alt: "Nanosaur 2 running on Android with touch controls" },
   ];
 </script>
 
@@ -60,8 +59,6 @@
         asynchronous coding agents.
       </li>
     </div>
-    <Card>
-      <ProjectCarousel {images} />
-    </Card>
+    <ProjectCarousel {images} />
   </PortfolioBody>
 </PortfolioCard>

@@ -4,20 +4,19 @@
   import Card from "$lib/cards/Card.svelte";
 </script>
 
-<div id="resume" class="flex flex-col gap-2 items-center">
+<div id="resume" class="flex flex-col gap-2">
   <Heading>Resume</Heading>
   <Card>
-    <div class="grid grid-cols-1 gap-4">
-      <img
-        src="/Resume-Page-1.jpg"
-        alt="Resume Page 1"
-        class="w-full h-auto max-h-[1000px] object-contain"
-      />
-      <DownloadButton
-        text="Download PDF"
-        link="/Resume.pdf"
-        downloadName="Lachlan Wright - Resume"
-      />
-    </div>
+    <img
+      src="/Resume-Page-1.jpg"
+      alt="Resume Page 1"
+      class="w-full h-auto max-h-[1000px] object-contain"
+      loading="lazy"
+    />
   </Card>
+  <DownloadButton
+    text="Download resume PDF"
+    link="/Resume.pdf"
+    downloadName="Lachlan Wright - Resume"
+  />
 </div>

@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Card from "$lib/cards/Card.svelte";
   import WhiteLinkButton from "$lib/buttons/WhiteLinkButton.svelte";
   import PortfolioBody from "$lib/items/PortfolioBody.svelte";
   import PortfolioCard from "$lib/items/PortfolioCard.svelte";
@@ -7,12 +6,12 @@
   import ProjectCarousel from "./ProjectCarousel.svelte";
 
   const images = [
-    { src: "portfolio/pangea/Pangea1.png" },
-    { src: "portfolio/pangea/Pangea2.png" },
-    { src: "portfolio/pangea/Pangea3.png" },
-    { src: "portfolio/pangea/Pangea4.png" },
-    { src: "portfolio/pangea/Pangea5.png" },
-    { src: "portfolio/pangea/Pangea6.png" },
+    { src: "portfolio/pangea/Pangea1.png", alt: "Pangea Resource Edit showing a level map with editable game objects" },
+    { src: "portfolio/pangea/Pangea2.png", alt: "Pangea Resource Edit showing level terrain and object placement" },
+    { src: "portfolio/pangea/Pangea3.png", alt: "Classic Pangea game scene used to check level changes" },
+    { src: "portfolio/pangea/Pangea4.png", alt: "Otto Matic game scene used to check edited level assets" },
+    { src: "portfolio/pangea/Pangea5.png", alt: "Pangea game level terrain displayed in the 3D viewer" },
+    { src: "portfolio/pangea/Pangea6.png", alt: "Pangea Resource Edit showing its object model preview alongside the level map" },
   ];
 </script>
 
@@ -71,8 +70,6 @@
         Used Konva to create a drag-and-drop interface for editing level data
       </li>
     </div>
-    <Card>
-      <ProjectCarousel {images} />
-    </Card>
+    <ProjectCarousel {images} />
   </PortfolioBody>
 </PortfolioCard>

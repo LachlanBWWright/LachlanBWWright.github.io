@@ -16,14 +16,14 @@
 <div id="portfolio" class="flex flex-col gap-2">
   <Heading>Portfolio</Heading>
   <div class="grid grid-cols-1 gap-6">
-    <PangeaResourceEdit />
-    <ResourceForkParser />
+    <div id="project-pangea"><PangeaResourceEdit /></div>
+    <div id="project-resource-fork-parser"><ResourceForkParser /></div>
     <SteamInvEdit />
-    <AndroidPorts />
+    <div id="project-android-ports"><AndroidPorts /></div>
     <DealScanner />
     <LBWWMafia />
     <PublicTransportApp />
-    <RecklessDrivinPort />
+    <div id="project-reckless-drivin"><RecklessDrivinPort /></div>
     <WiitarThing />
     <OnlineExamSystem />
     <CryogenicWiringSimulation />

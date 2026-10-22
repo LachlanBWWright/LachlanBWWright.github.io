@@ -6,6 +6,6 @@
   let { children }: Props = $props();
 </script>
 
-<p class="text-white font-bold text-2xl text-center">
+<h3 class="text-white font-bold text-xl sm:text-2xl">
   {@render children?.()}
-</p>
+</h3>

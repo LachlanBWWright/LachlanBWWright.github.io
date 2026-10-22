@@ -29,7 +29,9 @@ export function createSectionScrollState() {
     const navbarRef = document.getElementById("navbar");
     window.scrollTo({
       top: anchor.offsetTop - (navbarRef?.clientHeight ?? 32),
-      behavior: "smooth",
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? "instant"
+        : "smooth",
     });
   }
 
